@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+    <title></title>
+    <style>
+    /* Сброс врапперов*/
+    body {
+        min-width: 0 !important;
+        background-color: white;
+    }
+
+    .base-width {
+        background-color: transparent;
+        margin: 0;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .catalogue {
+        padding: 0;
+    }
+
+    .cms-page .col-middle {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0 !important;
+    }
+
+    .catalogue h1 {
+        display: none;
+    }
+
+    #content {
+        margin-top: 0;
+    }
+
+    /* .wrapper-text ul li {
+        list-style-type: none !important;
+    } */
+
+    .wrapper-text table td {
+        padding: 20px;
+    }
+
+    .simple-breadcrumbs {
+      display: none !important;
+    }
+
+  /* --- */
+
+  * {padding: 0; margin: 0}
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2F4F7;
+  }
+
+  ._customer-mors {
+    max-width: 1368px;
+    margin: 40px auto;
+  }
+
+  ._customer-mors-h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 38px;
+    margin: 0 0 36px 0;
+    color: #424B5E;
+  }
+
+  ._customer-mors-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  ._customer-mors-left-menu {
+    width: 312px;
+  }
+
+  ._customer-mors-right {
+    max-width: 1056px;
+    width: 100%;
+  }
+
+  ._customer-right-products {
+
+  }
+
+  /* Хлебные крошки */
+
+  ._customer-mors-bread-crumbs {
+    display: flex;
+    flex-direction: row;
+    color: #5E7491;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 36px 0 24px 0;
+    line-height: 24px;
+    flex-wrap: wrap;
+  }
+
+  ._customer-mors-bread-crumbs a {
+    text-decoration: none !important;
+    color: #5E7491 !important;
+    font-weight: 600 !important;
+  }
+
+  ._customer-mors-bread-crumbs a:hover {
+    color: #FF7043 !important;
+  }
+
+  ._customer-mors-bread-crumbs-r {
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0 12px;
+  }
+
+  /* end Хлебные крошки */
+
+  /* БЛОК МЕНЮ */
+
+  ._customer-left-menu-h1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: #424B5E;
+    width: 312px;
+    margin: 0px 0 0;
+  }
+
+  /* стили ссылок меню */
+
+  ._customer-menu-point-goods-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162297/content_g-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-goods {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162299/content_.png.);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-goods:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162297/content_g-r.png);
+  }
+
+  ._customer-menu-point-site-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162293/content_site-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-site {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162041/content_site.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-site:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162293/content_site-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-seo-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162295/content_seo-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-seo {
+    background-image: url(https://www.pulscen.ru//system/ckeditor_assets/pictures/162040/content_seo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+  }
+
+  ._customer-menu-point-seo:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162295/content_seo-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-banners-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162292/content_media-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-banners {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162039/content_media.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+  }
+
+  ._customer-menu-point-banners:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162292/content_media-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-integration-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162290/content_int-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-integration {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162037/content_int.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+  }
+
+  ._customer-menu-point-integration:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162290/content_int-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-all-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162289/content_all-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-all {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162036/content_all.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+  }
+
+  ._customer-menu-point-all:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162289/content_all-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-spec-active {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162291/content_spec-r.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point-spec {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162042/content_spec.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0 18px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+  }
+
+  ._customer-menu-point-spec:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162291/content_spec-r.png);
+    color: #FF7043 !important;
+  }
+
+  ._customer-menu-point-main {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162038/content_main.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px 0 12px 40px;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    margin: 0 0 12px 0;
+  }
+
+  ._customer-menu-point-main:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162404/content_main-b.png);
+    color: #028dd8 !important;
+  }
+
+  ._customer-menu-point {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 0;
+    align-items: center;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  }
+
+  ._customer-menu-point img {
+    margin: 0 24px 0 0;
+  }
+
+  ._customer-menu-point-a-active {
+    color: #FF7043 !important;
+    text-decoration: none !important;
+  }
+
+  ._customer-menu-point-a-main {
+    color: #A2A9B4 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+  ._customer-menu-point-a-main:hover {
+    color: #028dd8 !important;
+    text-decoration: none !important;
+  }
+
+  ._customer-menu-point-a {
+    color: #5E7491 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+  ._customer-menu-point-a:hover {
+    color: #FF7043 !important;
+    text-decoration: none !important;
+  }
+
+  ._customer-menu-point-my-orders {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #5E7491 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+  ._customer-menu-point-my-orders:hover {
+    color: #FF7043 !important;
+    text-decoration: none !important;
+  }
+
+  ._customer-menu {
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #DDE1ED;
+    width: 204px;
+    margin: 0 0 18px 0;
+  }
+
+  /* END БЛОК МЕНЮ */
+
+  /* БЛОК ОБРАТНОЙ СВЯЗИ */
+
+  ._customer-mors-left-contacts {
+    margin: 50px 0 0 0;
+  }
+
+  ._customer-contacts-h {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #424B5E;
+    padding: 10px 0;
+    border-bottom: 1px solid #DDE1ED;
+    margin: 0 0 20px 0;
+    width: 210px;
+  }
+
+  ._customer-contacts-photo-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  ._customer-contacts-photo-block img {
+    margin: 0 10px 0 0;
+  }
+
+  ._customer-contacts-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2F3644;
+  }
+
+  ._customer-contacts-function {
+    font-size: 14px;
+    color: #5E7491;
+    margin: 0 0 4px 0;
+  }
+
+  ._customer-contacts-online {
+    font-weight: 600;
+    font-size: 14px;
+    color: #A3BD49;
+  }
+
+  ._customer-contacts-phone {
+    width: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  ._customer-contacts-phone img {
+    margin: 0 10px 0 0;
+  }
+
+  ._customer-mors-phone {
+    display: inline-block !important;
+    font-size: 14px !important;
+    color: #028dd8 !important;
+    outline: 0 !important;
+    cursor: pointer !important;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent !important;
+    border-bottom: 1px dashed #028dd8;
+  }
+
+  ._customer-mors-mail {
+    font-size: 14px !important;
+    color: #028dd8 !important;
+    font-weight: 600;
+  }
+
+  /* END БЛОК ОБРАТНОЙ СВЯЗИ */
+
+  /* БЛОК ОПИСАНИЯ */
+
+  ._customer-mors-right-h {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #424B5E;
+    margin: 0 0 24px 0;
+  }
+
+  ._customer-mors-white-block {
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 36px;
+  }
+
+  ._customer-mors-right-des {
+    font-size: 16px;
+    color: #5E7491;
+    margin: 0 0 24px 0;
+    font-weight: normal;
+  }
+
+  #_customer-des-no-margin {
+    margin: 0;
+  }
+
+  ._customer-mors-right-h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    color: #424B5E;
+    margin: 36px 0 0 0;
+  }
+
+  /* end БЛОК ОПИСАНИЯ */
+
+  /* БЛОК ТАРИФОВ */
+
+  ._customer-right-tariffs {
+    padding: 10px 0 10px 40px;
+    border-left: 4px solid #DDE1ED;
+  }
+
+  ._customer-tariffs-package {
+    border-bottom: 1px solid #DDE1ED;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 20px 0;
+  }
+
+  ._customer-tariffs-h {
+    font-weight: bold;
+    font-size: 18px;
+    color: #424B5E;
+    margin: 0 0 20px 0;
+  }
+
+  ._customer-tariffs-text {
+    font-size: 14px;
+    color: #5E7491;
+  }
+
+  ._customer-tariffs-other-offers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  ._customer-tariffs-offer {
+    width: 328px;
+  }
+
+  ._customer-offer-text {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #A2A9B4;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  ._customer-tariffs-white-block {
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 24px 60px;
+    margin: 30px 0 40px 0;
+  }
+
+  ._customer-white-block-h {
+    font-size: 24px;
+    color: #424B5E;
+  }
+
+  ._customer-white-block-des {
+    margin: 25px 0 35px 0;
+    font-size: 14px;
+    line-height: 214%;
+    color: #5E7491;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  ._customer-tariff-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+    width: 317px;
+  }
+
+  /* END БЛОК ТАРИФОВ */
+
+  /* БЛОК ПРОДУКТОВ */
+
+  ._customer-products-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 1116px;
+  }
+
+  ._customer-product {
+    width: 312px;
+    margin: 60px 60px 0 0;
+  }
+
+  #_customer-product-24 {
+    margin: 24px 60px 0 0;
+  }
+
+  #_customer-product-tarif {
+    margin: 0;
+  }
+
+  ._customer-product-h {
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: #028DD8 !important;
+    text-decoration: none !important;
+  }
+
+  ._customer-product-h:hover {
+    color: #FF7043 !important;
+  }
+
+  ._customer-product-h:active {
+    color: #028DD8 !important;
+  }
+
+  ._customer-product-text {
+    font-size: 14px;
+    color: #2F3644;
+    line-height: 170%;
+    height: 48px;
+    margin: 20px 0 0 0;
+  }
+
+  ._customer-product-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  ._customer-order-price {
+    font-size: 14px;
+    color: #424B5E;
+  }
+
+  ._customer-order-free {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  ._customer-price {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  ._customer-product-img {
+    border-radius: 3px;
+    margin: 0 0 20px 0 !important;
+  }
+
+  /* END БЛОК ПРОДУКТОВ */
+
+
+  /* КНОПКИ */
+
+  ._customer-offer-button {
+    width: 100%;
+    display: inline-block !important;
+    padding: 10px 0 !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    white-space: nowrap !important;
+    color: #028dd8 !important;
+    border: 1px solid #028dd8!important;
+    border-radius: 3px !important;
+    outline: 0 !important;
+    cursor: pointer !important;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent !important;
+  }
+
+  ._customer-offer-button:hover {
+    border: 1px solid #028dd8 !important;
+    color: #ffffff !important;
+    background-color: #028dd8 !important;
+  }
+
+  ._customer-order-button {
+    width: 112px !important;
+    height: 48px !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    white-space: nowrap !important;
+    color: #028dd8 !important;
+    border: 1px solid #028dd8!important;
+    border-radius: 3px !important;
+    outline: 0 !important;
+    cursor: pointer !important;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: transparent !important;
+  }
+
+  ._customer-order-button:hover {
+    border: 1px solid #028dd8 !important;
+    color: #ffffff !important;
+    background-color: #028dd8 !important;
+  }
+
+  /* КНОПКИ END */
+
+  @media(max-width: 1400px) {
+
+    ._customer-mors-left-menu {
+      display: none;
+    }
+
+    ._customer-mors {
+      width: 90%;
+      max-width: 1056px;
+      margin: auto;
+    }
+
+  }
+
+  @media(max-width: 1100px) {
+
+    ._customer-products-block {
+      width: auto;
+    }
+
+    ._customer-mors-h1 {
+      font-size: 30px;
+    }
+
+  }
+
+    </style>
+</head>
+<body>
+
+  <div class="_customer-mors">
+    <div class="_customer-mors-bread-crumbs">
+      <a href="https://www.pulscen.ru/about/mors-test" target="_blank">Магазин онлайн сервисов</a>
+      <div class="_customer-mors-bread-crumbs-r"> / </div>
+      <div>Спецпредложение</div>
+    </div>
+    <div class="_customer-mors-h1">Спецпредложение</div>
+    <div class="_customer-mors-flex">
+      <div class="_customer-mors-left-menu">
+        <div class="_customer-menu">
+          <a href="https://www.pulscen.ru/about/mors-test" class="_customer-menu-point-a-main">
+            <div class="_customer-menu-point-main" id="_customer-menu-point-main">На главную</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/site" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-site">Размещение товаров <br> на торговой площадке</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/site" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-site">Создание сайта</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/seo" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-seo">Продвижение и SEO-оптимизация сайта</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/banners" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-banners">Медийная реклама</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/integration" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-integration">Интеграции</div>
+          </a>
+          <a href="https://www.pulscen.ru/about/mors-test/all" class="_customer-menu-point-a">
+            <div class="_customer-menu-point-all">Все приложения</div>
+          </a>
+          <div class="_customer-menu-point-goods-active">
+            <div class="_customer-menu-point-a-active">Спецпредложение</div>
+          </div>
+        </div>
+        <div class="_customer-menu-point">
+          <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150868/content_1.png" alt="">
+          <div class="_customer-menu-point-my-orders">{user:online_market_url(, , Мои заказы,orders)}</div>
+        </div>
+        <div class="_customer-mors-left-contacts">
+          <div class="_customer-contacts-h">По вопросам заказа услуг</div>
+          <div class="_customer-contacts-phone">
+            <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150870/content_.png." alt="">
+            <div class="_customer-mors-phone ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059" data-company-id="99572059" data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru" data-params="{&quot;company_id&quot;:&quot;99572059&quot;}" data-statistics="1" data-type="callback">8 800 250 06 14</div>
+          </div>
+          <div class="_customer-menu-point">
+            <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150874/content_.png." alt="">
+            <a href="mailto:online@pulscen.ru" target="_blank" class="_customer-mors-mail">online@pulscen.ru</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="_customer-mors-right">
+
+        <!-- Размещение товаров на торговой площадке -->
+
+        <div>
+
+          <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/162674/content_frame_7_9.png" alt="">
+
+
+
+          <div class="_customer-right-products">
+            <div class="_customer-products-block">
+              <div class="_customer-product" id="_customer-product">
+                <a href="https://www.pulscen.ru/online-shop/paykeeper" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Paykeeper'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150777/content_frame_6.png" alt=""></a>
+                <div class="_customer-product-text-block">
+                  <a href="https://www.pulscen.ru/online-shop/paykeeper" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Paykeeper'});">Интеграция с Paykeeper</a>
+                  <div class="_customer-product-text">Добавления онлайн-оплаты в форму заказа, для ускорения перевода средств от клиента.</div>
+                  <div class="_customer-product-order">
+                    <div class="_customer-order-price"><span class="_customer-price"><span style="text-decoration: line-through; color: red; font-size: 70%">4 900 ₽/год</span><br>3 450 ₽/год</span></div>
+                    <a href="https://www.pulscen.ru/online-shop/paykeeper" target="_blank" class="_customer-order-button ab-order" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Paykeeper'});">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="_customer-product" id="_customer-product">
+                <a href="https://www.pulscen.ru/online-shop/boxberry" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Boxberry'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150783/content_group_3.png" alt=""></a>
+                <div class="_customer-product-text-block">
+                  <a href="https://www.pulscen.ru/online-shop/boxberry" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Boxberry'});">Интеграция с Boxberry</a>
+                  <div class="_customer-product-text">Настройка автоматического расчета стоимости доставки для покупателей.</div>
+                  <div class="_customer-product-order">
+                  <div class="_customer-order-price"><span class="_customer-price"><span style="text-decoration: line-through; color: red; font-size: 70%">4 900 ₽/год</span><br>3 450 ₽/год</span></div>
+                    <a href="https://www.pulscen.ru/online-shop/boxberry" target="_blank" class="_customer-order-button ab-order" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Boxberry'});">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="_customer-product">
+                <a href="https://www.pulscen.ru/online-shop/dellin" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Деловые линии'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150775/content_frame_4.png" alt=""></a>
+                <div class="_customer-product-text-block">
+                  <a href="https://www.pulscen.ru/online-shop/dellin" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Деловые линии'});">Интеграция с Деловыми линиями</a>
+                  <div class="_customer-product-text">Возможность расчета доставки для покупателей на форме заказа.</div>
+                  <div class="_customer-product-order">
+                    <div class="_customer-order-price"><span class="_customer-price"><span style="text-decoration: line-through; color: red; font-size: 70%">4 900 ₽/год</span><br>3 450 ₽/год</span></div>
+                    <a href="https://www.pulscen.ru/online-shop/dellin" target="_blank" class="_customer-order-button ab-order" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Деловые линии'});">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="_customer-product">
+                <a href="https://www.pulscen.ru/online-shop/actual-price" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Актуальная цена'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150781/content_frame_10.png" alt=""></a>
+                <div class="_customer-product-text-block">
+                  <a href="https://www.pulscen.ru/online-shop/actual-price" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Актуальная цена});">Товарная метка «Актуальная цена»</a>
+                  <div class="_customer-product-text">Визуальное выделение вашего товара в товарных листингах Пульс цен.</div>
+                  <div class="_customer-product-order">
+                  <div class="_customer-order-price"><span class="_customer-price"><span style="text-decoration: line-through; color: red; font-size: 70%">10 000 ₽/год</span><br>7 000 ₽/год</span></div>
+                    <a href="https://www.pulscen.ru/online-shop/actual-price" target="_blank" class="_customer-order-button ab-order" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Актуальная цена'});">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end Размещение товаров на торговой площадке -->
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    var utm='packet';
+
+    if( window.location.toString().indexOf(utm +'=') != -1) {
+		var number=(window.location.toString().substr(window.location.toString().indexOf(utm+'=')+ utm.length+1,50)).toLowerCase();
+		if( number.indexOf('&') != -1) {
+			number=(number.substr(0,number.indexOf('&')));
+		}
+		if(number == '0') {
+			$('.multi').html($("#base"));
+		} else if(number == '7') {
+			$('.multi').html($("#base-1000"));
+		} else if(number == '2') {
+			$('.multi').html($("#silver"));
+		} else if(number == '3') {
+			$('.multi').html($("#gold"));
+		} else if(number == '4') {
+			$('.multi').html($("#platina"));
+		} else if(number == '5') {
+			$('.multi').html($("#platina-plus"));
+		}
+    }
+    console.log(number);
+});
+</script>
+
+
+<script type='text/javascript'>
+    function toggle(id) {
+        document.getElementById("conten").innerHTML = document.getElementById(id).innerHTML;
+    }
+    toggle("first");
+</script>
+
+;<!-- Begin Me-Talk --><script type='text/javascript'>
+window.MeTalkSetup = {domain:"test4-pulscen.ru"};
+(function(d, w, m) {
+window.supportAPIMethod = m;
+var s = d.createElement('script');
+s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+s.async = true;
+var id = '9e71060b780fc267cbbfff6f8dec56ba';
+s.src = '//me-talk.ru/support/support.js?h='+id;
+var sc = d.getElementsByTagName('script')[0];
+w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+if (sc) sc.parentNode.insertBefore(s, sc);
+else d.documentElement.firstChild.appendChild(s);
+})(document, window, 'MeTalk');
+
+</script><!-- End Me-Talk -->

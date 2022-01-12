@@ -1,0 +1,380 @@
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо: Адаптивные вкладки-табы на CSS3</title>
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Пример создания адаптивных вкладок (табов) исключительно средствами CSS3" />
+    <meta name="keywords" content="табы css, вкладки css3, адаптивные вкладки" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+
+        /* Стили секций с содержанием */
+
+        .region-section {
+            display: none;
+        }
+
+        /* Описываем анимацию свойства opacity */
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Прячем чекбоксы */
+
+        .region-tabs-input {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+
+        .region-tabs-label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+        /* Изменения стиля переключателей вкладок при наведении */
+
+        .region-tabs-label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+
+        .region-tabs-input:checked + .region-tabs-label {
+            color: red;
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+
+        #tab1-region:checked ~ #content-tab1-region,
+        #tab2-region:checked ~ #content-tab2-region,
+        #tab3-region:checked ~ #content-tab3-region {
+            display: block;
+        }
+
+        .one-packet-of-4 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          min-height: 158px;
+          border-bottom: 1px solid #DDE1ED;
+          padding: 30px 60px;
+          box-sizing: border-box;
+        }
+
+        .one-packet-of-3 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          min-height: 210px;
+          border-bottom: 1px solid #DDE1ED;
+          padding: 30px 60px;
+          box-sizing: border-box;
+        }
+
+        .packet-description {
+          margin: 0 5px 0 0;
+        }
+
+        .packet-name {
+          display: flex;
+          flex-direction: row;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: #424B5E;
+          font-weight: 800;
+          margin: 0 0 20px 0;
+        }
+
+        .packet-name img {
+          margin: 0 0 0 20px;
+        }
+
+        .packet-choice {
+
+        }
+
+        .packet-price {
+          font-size: 20px;
+          text-align: right;
+          font-weight: 600;
+          color: #5E7491;
+          margin: 0 0 20px 0;
+        }
+
+        .packet-price-currency {
+          font-size: 14px;
+        }
+
+        .tariff-price {
+          width: 55%;
+          min-width: 549px;
+          min-height: 630px;
+          background-color: #FAFAFA;
+          box-shadow: inset 0px 5px 18px rgba(0, 0, 0, 0.12);
+          border-radius: 0px 3px 3px 0px;
+          font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <input id="tab1-region"  class="region-tabs-input" type="radio" name="region-tabs" checked>
+            <label for="tab1-region" class="region-tabs-label" title="Wordpress">ЕКБ</label>
+            <input id="tab2-region" class="region-tabs-input" type="radio" name="region-tabs">
+            <label for="tab2-region" class="region-tabs-label" title="Windows">МСК</label>
+            <input id="tab3-region" class="region-tabs-input" type="radio" name="region-tabs">
+            <label for="tab3-region" class="region-tabs-label" title="HTML5">ДРУГИЕ</label>
+            <section id="content-tab1-region" class="region-section">
+              <div class="tariff-price">
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">Серебро</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135141/content_.png." alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 500 товаров</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">35 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать серебро</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ЗОЛОТО</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135530/content_gold.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 1000 товаров</div>
+                      <div class="">- выше тарифа "Серебро"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">72 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать золото</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135534/content_platina.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 5000 товаров</div>
+                      <div class="">- выше тарифа "Золото"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">130 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА +</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135142/content_1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div>– неограниченное кол-во товаров</div>
+                      <div>– VIP-места</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">700 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину+</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="content-tab2-region" class="region-section">
+              <div class="tariff-price">
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">Серебро</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135141/content_.png." alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 500 товаров</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">35 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать серебро</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ЗОЛОТО</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135530/content_gold.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 1000 товаров</div>
+                      <div class="">- выше тарифа "Серебро"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">45 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать золото</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135534/content_platina.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 5000 товаров</div>
+                      <div class="">- выше тарифа "Золото"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">75 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА +</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135142/content_1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div>– неограниченное кол-во товаров</div>
+                      <div>– VIP-места</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">700 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину+</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="content-tab3-region" class="region-section">
+              <div class="tariff-price">
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">Серебро</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135141/content_.png." alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 500 товаров</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">28 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать серебро</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ЗОЛОТО</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135530/content_gold.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 1000 товаров</div>
+                      <div class="">- выше тарифа "Серебро"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">38 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать золото</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135534/content_platina.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div class="">- до 5000 товаров</div>
+                      <div class="">- выше тарифа "Золото"</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">65 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину</div>
+                  </div>
+                </div>
+                <div class="one-packet-of-4">
+                  <div class="packet-description">
+                    <div class="packet-name">
+                      <div class="">ПЛАТИНА +</div>
+                      <div class="packet-name-stars">
+                        <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/135142/content_1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="packet-conditions">
+                      <div>– неограниченное кол-во товаров</div>
+                      <div>– VIP-места</div>
+                    </div>
+                  </div>
+                  <div class="packet-choice">
+                    <div class="packet-price">700 000 <span class="packet-price-currency">руб./год</span></div>
+                    <div class="pc-button-standart ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99632533" data-company-id="99632533" data-company-name="Менеджер Пульс цен" data-company-name-rest="" data-company-url="https://manager-pc.pulscen.ru/" data-params="{&quot;company_id&quot;:&quot;99632533&quot;}" data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'CMS content', 'eventAction':'Переход со страницы О проекте', 'eventLabel':'turbo2019_callback'});">Выбрать платину+</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+    </div>
+</body>

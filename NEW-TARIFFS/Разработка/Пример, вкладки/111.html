@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title> - jsFiddle demo by gorbuz9kin</title>
+
+  <style type='text/css'>
+
+    .dropdown-menu ul {
+
+  margin: 0;
+
+  padding: 0;
+
+  width: 135px;
+
+  list-style: none;
+
+  display: none;
+
+}
+
+.dropdown-menu ul li {
+
+    background: #0085b6;
+
+    height: 35px;
+
+}
+
+.dropdown-menu ul li:hover {
+
+    background: #1d9fcb;
+
+}
+.dropdown-menu ul li a {
+
+  display: block;
+
+  width: 100%;
+
+  padding: 5px 35px;
+
+  text-decoration: none;
+
+    font-size: 15px;
+
+    color: #fff;
+
+}
+
+.dropdown-menu ul li:first-child a {
+
+    background: url(img/flag_english_active.png) no-repeat 5px center;
+}
+
+.dropdown-menu ul li:nth-child(2) a {
+
+    background: url(img/flag_russion.png) no-repeat 5px center;
+
+}
+
+.dropdown-menu ul li:last-child a {
+
+    background: url(img/flag_ukraine.png) no-repeat 5px center;
+
+}
+.dropdown-menu .title {
+
+    display: inline-block;
+
+    width: 80px;
+
+    height: 20px;
+
+    padding: 5px 0  5px 35px;
+
+    font-size: 15px;
+
+    line-height: 20px;
+    cursor: pointer;
+    background: #eaecf0 url(img/flag_english.png) no-repeat 5px center;
+
+}
+.dropdown-menu .title::after {
+
+  content: "";
+
+  float: right;
+
+  display: block;
+
+  background: url(img/arrow_down.png) no-repeat 10px center;
+
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+}
+
+.dropdown-menu.open .title {
+
+  background: #0085b6 url(img/flag_english_active.png) no-repeat 5px center;
+
+  color: #fff;
+
+  border-bottom: 4px solid #1d9fcb;
+
+}
+
+.dropdown-menu.open .title::after {
+
+  background: url(img/arrow_up.png) no-repeat 10px center;
+
+}
+
+.dropdown-menu.open ul {
+
+  display: block;
+
+}
+
+/* Стили секций с содержанием */
+
+.region-section {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Прячем чекбоксы */
+
+.region-tabs-input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+
+.region-tabs-label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.region-tabs-label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+
+.region-tabs-input:checked + .region-tabs-label {
+    color: red;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-region:checked ~ #content-tab1-region,
+#tab2-region:checked ~ #content-tab2-region,
+#tab3-region:checked ~ #content-tab3-region {
+    display: block;
+}
+
+/* Стили секций с содержанием */
+
+.region-section-2 {
+    display: none;
+}
+
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Прячем чекбоксы */
+
+.region-tabs-input-2 {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+
+.region-tabs-label-2 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.region-tabs-label-2:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+
+.region-tabs-input-2:checked + .region-tabs-label-2 {
+    color: red;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-region-2:checked ~ #content-tab1-region-2,
+#tab2-region-2:checked ~ #content-tab2-region-2,
+#tab3-region-2:checked ~ #content-tab3-region-2 {
+    display: block;
+}
+
+  </style>
+
+<script>
+
+window.onload=function(){
+
+var menuElem = document.getElementById('dropdown-menu'),
+
+    titleElem = menuElem.querySelector('.title');
+
+    document.onclick = function(event) {
+
+    var target = elem = event.target;
+
+    while (target != this) {
+
+          if (target == menuElem) {
+
+          if(elem.tagName == 'A') titleElem.innerHTML = elem.textContent;
+
+          menuElem.classList.toggle('open')
+
+              return;
+
+          }
+
+          target = target.parentNode;
+
+      }
+
+    menuElem.classList.remove('open');
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+  <div id="dropdown-menu" class="dropdown-menu">
+
+  <span class="title">
+    <input id="tab1-region"  class="region-tabs-input" type="radio" name="region-tabs" checked>
+    <label for="tab1-region" class="region-tabs-label" title="Wordpress">ЕКБ</label>
+    <section id="content-tab1-region" class="region-section">
+      <div>100</div>
+      <div>200</div>
+      <div>300</div>
+    </section></span>
+  <ul>
+
+    <li><a href="#"><input id="tab2-region" class="region-tabs-input" type="radio" name="region-tabs">
+    <label for="tab2-region" class="region-tabs-label" title="Windows">МСК</label>
+    <section id="content-tab2-region" class="region-section">
+      <div>200</div>
+      <div>300</div>
+      <div>400</div>
+    </section></a></li>
+
+    <li><a href="#"><input id="tab3-region" class="region-tabs-input" type="radio" name="region-tabs">
+    <label for="tab3-region" class="region-tabs-label" title="HTML5">ДРУГИЕ</label>
+    <section id="content-tab3-region" class="region-section">
+      <div>300</div>
+      <div>400</div>
+      <div>500</div>
+    </section></a></li>
+
+ </ul>
+</div>
+</body>
+</html>

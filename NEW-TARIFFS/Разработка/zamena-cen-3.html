@@ -1,0 +1,180 @@
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо: Адаптивные вкладки-табы на CSS3</title>
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Пример создания адаптивных вкладок (табов) исключительно средствами CSS3" />
+    <meta name="keywords" content="табы css, вкладки css3, адаптивные вкладки" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+
+        /* Стили секций с содержанием */
+
+        .region-section {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 140px;
+        }
+
+        /* Описываем анимацию свойства opacity */
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Прячем чекбоксы */
+
+        .region-tabs-input {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+
+        .region-tabs-label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+        /* Изменения стиля переключателей вкладок при наведении */
+
+        .region-tabs-label:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+
+        .region-tabs-input:checked + .region-tabs-label {
+            color: red;
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+
+        #tab1-region:checked ~ #content-tab1-region,
+        #tab2-region:checked ~ #content-tab2-region,
+        #tab3-region:checked ~ #content-tab3-region {
+            display: block;
+        }
+
+        /* Стили секций с содержанием */
+
+        .region-section-2 {
+            display: none;
+        }
+
+        /* Описываем анимацию свойства opacity */
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Прячем чекбоксы */
+
+        .region-tabs-input-2 {
+            display: none;
+            position: absolute;
+        }
+        /* Стили переключателей вкладок (табов) */
+
+        .region-tabs-label-2 {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 10px;
+            font-weight: 600;
+            color: #000;
+        }
+        /* Изменения стиля переключателей вкладок при наведении */
+
+        .region-tabs-label-2:hover {
+            color: #888;
+            cursor: pointer;
+        }
+        /* Стили для активной вкладки */
+
+        .region-tabs-input-2:checked + .region-tabs-label-2 {
+            color: red;
+        }
+        /* Активация секций с помощью псевдокласса :checked */
+
+        #tab1-region-2:checked ~ #content-tab1-region-2,
+        #tab2-region-2:checked ~ #content-tab2-region-2,
+        #tab3-region-2:checked ~ #content-tab3-region-2 {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="position: relative;">
+          <ul class="region">
+            <li class="goroda">
+              <input id="tab1-region"  class="region-tabs-input" type="radio" name="region-tabs" checked>
+              <label for="tab1-region" class="region-tabs-label" title="Wordpress">ЕКБ</label>
+              <section id="content-tab1-region" class="region-section">
+                <div>100</div>
+                <div>200</div>
+                <div>300</div>
+              </section>
+            </li>
+            <li class="goroda">
+              <input id="tab2-region" class="region-tabs-input" type="radio" name="region-tabs">
+              <label for="tab2-region" class="region-tabs-label" title="Windows">МСК</label>
+              <section id="content-tab2-region" class="region-section">
+                <div>200</div>
+                <div>300</div>
+                <div>400</div>
+              </section>
+            </li>
+            <li class="goroda">
+              <input id="tab3-region" class="region-tabs-input" type="radio" name="region-tabs">
+              <label for="tab3-region" class="region-tabs-label" title="HTML5">ДРУГИЕ</label>
+              <section id="content-tab3-region" class="region-section">
+                <div>300</div>
+                <div>400</div>
+                <div>500</div>
+              </section>
+            </li>
+          </ul>
+
+
+
+        </div>
+    </div>
+</body>

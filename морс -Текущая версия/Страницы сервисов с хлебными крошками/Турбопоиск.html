@@ -1,0 +1,336 @@
+<!-- @format -->
+
+<script>
+	window.ConveadSettings = {
+		/* Use only [0-9a-z-] characters for visitor uid!
+    visitor_uid: '12345678',
+    visitor_info: {
+        first_name: 'John',
+        last_name: 'Smith',
+        email: 'john_smith@example.com',
+        phone: '8-800-000-000',
+        date_of_birth: '1974-07-30',
+        gender: 'male',
+        my_custom_numeric_property: 1234,
+        my_custom_string_property: 'foo',
+        my_custom_date_property: '2014-04-20',
+        my_custom_boolean_property: 'true'
+    }, */
+		app_key: "0941b6bf65402f9f664c3e3d675fd5ee",
+	};
+
+	(function (w, d, c) {
+		w[c] =
+			w[c] ||
+			function () {
+				(w[c].q = w[c].q || []).push(arguments);
+			};
+		var ts = ((+new Date() / 86400000) | 0) * 86400;
+		var s = d.createElement("script");
+		s.type = "text/javascript";
+		s.async = true;
+		s.charset = "utf-8";
+		s.src = "https://tracker.convead.io/widgets/" + ts + "/widget-0941b6bf65402f9f664c3e3d675fd5ee.js";
+		var x = d.getElementsByTagName("script")[0];
+		x.parentNode.insertBefore(s, x);
+	})(window, document, "convead");
+</script>
+<!-- /Convead Widget -->
+<script>
+	convead("event", "view_product", {
+		product_id: "34",
+		product_name: "Site-inclusive",
+		product_url: "https://www.pulscen.ru/online-shop/site-all",
+	});
+</script>
+
+<script>
+	function cerebro() {
+		convead("event", "update_cart", {
+			items: [
+				{ product_id: "34", qnt: 1, price: 350000 },
+				{ product_id: "34", qnt: 1, price: 350000 },
+			],
+		});
+
+		console.log("серебро");
+	}
+
+	function gold() {
+		convead("event", "update_cart", {
+			items: [
+				{ product_id: "341", qnt: 1, price: 450000 },
+				{ product_id: "341", qnt: 1, price: 450000 },
+			],
+		});
+
+		console.log("золото");
+	}
+
+	function plat() {
+		convead("event", "update_cart", {
+			items: [
+				{ product_id: "342", qnt: 1, price: 700000 },
+				{ product_id: "342", qnt: 1, price: 700000 },
+			],
+		});
+
+		console.log("платина");
+	}
+</script>
+
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet" />
+		<title></title>
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/172142/main-dop.css" />
+		<!-- <link rel="stylesheet" href="main-dop.css"> -->
+
+		<body>
+			<div class="_customer-mors-bread-crumbs">
+				<a class="before" href="https://www.pulscen.ru/online-shop" target="_blank">Магазин онлайн сервисов </a>
+				<div class="_customer-mors-bread-crumbs-r"> / </div>
+				<a class="before" href="https://www.pulscen.ru/online-shop/seo" target="_blank">Продвижение и SEO-оптимизация сайта</a>
+				<div class="_customer-mors-bread-crumbs-r"> / </div>
+				<div>Турбопоиск</div>
+			</div>
+
+			<div class="_customer-mors-description-back">
+				<div class="_customer-mors-description-back-content">
+					<!-- Левая колонка блоков -->
+					<div class="_customer-des-left-column">
+						<a href="https://www.pulscen.ru/online-shop/seo" class="_customer-back"></a>
+
+						<!-- end Блок полного описания сервиса -->
+
+						<!-- Блок заказа для левой колонки -->
+						<div class="_customer-des-order">
+							<div class="_customer-des-order-order">
+								<div class="_customer-right-column-h">Стоимость и заказ услуги</div>
+								<div class="_customer-order-price">от<span class="_customer-price"> 60 000 ₽</span>/квартал</div>
+								<div class="_customer-des-order-button ab-order js-apress-order-button js-get-order-form" data-company-contacts-url="https://one-shop.pulscen.ru/contacts" data-company-name="Магазин онлайн сервисов" data-params='{"company_id":"99701862", "message":"Добрый день! Меня интересует услуга Турбопоиск на Пульс цен."}' data-type="message" style="" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Турбопоиск'});">Заказать</div>
+							</div>
+							<div class="_customer-des-order-contacts">
+								<div class="_customer-right-column-h">По вопросам и заказу услуги</div>
+								<div class="_customer-contacts-phone">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150870/content_.png." alt="" />
+									<div class="_customer-mors-phone ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059" data-company-id="99572059" data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru" data-params='{"company_id":"99572059"}' data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Заказ звонка', 'eventLabel':'Ссылка:Номер телефона'});">8 800 250 06 14</div>
+								</div>
+								<div class="_customer-menu-point">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150874/content_.png." alt="" />
+									<a href="mailto:online@pulscen.ru?subject=" Online shop target="_blank" class="_customer-mors-mail" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Отправить письмо', 'eventLabel':'Ссылка:Электронная почта'});">online@pulscen.ru</a>
+								</div>
+							</div>
+						</div>
+						<!-- end Блок заказа для левой колонки -->
+
+						<!-- Похожие сервисы -->
+						<div class="_customer-des-related-product">
+							<div class="_customer-main-block-h1" id="_customer-related-product-h">Похожие сервисы</div>
+							<div class="_customer-products-block">
+								<div class="_customer-product-dop-page">
+									<a href="https://ekb.pulscen.ru/online-shop/turbonet" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Турбосети'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/162963/content_pic_7.png" alt="" /></a>
+									<div class="_customer-product-text-block">
+										<a href="https://ekb.pulscen.ru/online-shop/turbonet" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Турбосети'});">Турбосети</a>
+										<div class="_customer-product-text">Размещение вашей рекламы на сайтах - партнерах Яндекс (РСЯ) и контекстно - медийной сети Google (КМС).</div>
+										<div class="_customer-product-order">
+											<div class="_customer-order-price"><span class="_customer-price">60 000 ₽</span>/ квартал</div>
+											<div class="_customer-order-button ab-order js-apress-order-button js-get-order-form" data-company-contacts-url="https://one-shop.pulscen.ru/contacts" data-company-name="Магазин онлайн сервисов" data-params='{"company_id":"99701862", "message":"Добрый день! Меня интересует услуга Турбосети."}' data-type="message" style="" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Турбосети'});">Заказать</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Похожие сервисы -->
+					</div>
+					<!-- end Левая колонка блоков -->
+
+					<!-- Правая колонка блоков -->
+					<div class="_customer-des-right-column">
+						<div class="_customer-order-contacts-block">
+							<div class="_customer-right-column-block" id="_customer-right-column-first">
+								<div class="_customer-right-column-h">Стоимость и заказ услуги</div>
+								<div class="_customer-order-price">от<span class="_customer-price"> 60 000 ₽</span>/квартал</div>
+								<div class="_customer-des-order-button ab-order js-apress-order-button js-get-order-form" data-company-contacts-url="https://one-shop.pulscen.ru/contacts" data-company-name="Магазин онлайн сервисов" data-params='{"company_id":"99701862", "message":"Добрый день! Меня интересует услуга Турбопоиск на Пульс цен."}' data-type="message" style="" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Турбопоиск'});">Заказать</div>
+							</div>
+							<div class="_customer-right-column-block">
+								<div class="_customer-right-column-h">По вопросам и заказу услуги</div>
+								<div class="_customer-contacts-phone">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150870/content_.png." alt="" />
+									<div class="_customer-mors-phone ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059" data-company-id="99572059" data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru" data-params='{"company_id":"99572059"}' data-statistics="1" data-type="callback" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Заказ звонка', 'eventLabel':'Ссылка:Номер телефона'});">8 800 250 06 14</div>
+								</div>
+								<div class="_customer-menu-point">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/150874/content_.png." alt="" />
+									<a href="mailto:online@pulscen.ru?subject=" Online shop target="_blank" class="_customer-mors-mail" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Отправить письмо', 'eventLabel':'Ссылка:Электронная почта'});">online@pulscen.ru</a>
+								</div>
+							</div>
+						</div>
+						<div class="_customer-des-similar-products">
+							<div class="_customer-right-column-h">Может пригодиться</div>
+							<div class="_customer-product-dop-page">
+								<a href="https://www.pulscen.ru/online-shop/inclusive" target="_blank"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/155464/content_pic_16.png" alt="" /></a>
+								<div class="_customer-product-text-block">
+									<a href="https://www.pulscen.ru/online-shop/inclusive" target="_blank" class="_customer-product-h">Тарифы "Все включено"</a>
+									<div class="_customer-product-text">Полный комплекс услуг по продвижению бизнеса в интернете.</div>
+									<div class="_customer-product-order">
+										<div class="_customer-order-price">от <span class="_customer-price">350 000 ₽</span>/год</div>
+										<a href="https://www.pulscen.ru/online-shop/inclusive" target="_blank" class="_customer-order-button ab-order">Подробнее</a>
+									</div>
+								</div>
+								<div class="customer-similar-products-margin"></div>
+								<div class="_customer-product-dop-page">
+									<a href="https://ekb.pulscen.ru/online-shop/remarketing" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Ремаркетинг'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/162965/content_pic_6.png" alt="" /></a>
+									<div class="_customer-product-text-block">
+										<a href="https://ekb.pulscen.ru/online-shop/remarketing" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Ремаркетинг'});">Ремаркетинг аудитории Пульса цен</a>
+										<div class="_customer-product-text">Показ предложения компании в рекламной сети Яндекс пользователям, посещавшим Пульс цен.</div>
+										<div class="_customer-product-order">
+											<div class="_customer-order-price"><span class="_customer-price">20 000 ₽</span>/квартал</div>
+											<div class="_customer-order-button ab-order js-apress-order-button js-get-order-form" data-company-contacts-url="https://one-shop.pulscen.ru/contacts" data-company-name="Магазин онлайн сервисов" data-params='{"company_id":"99701862", "message":"Добрый день! Меня интересует услуга Ремаркетинг аудиторрии Пульса цен."}' data-type="message" style="" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Ремаркетинг'});">Заказать</div>
+										</div>
+									</div>
+								</div>
+								<div class="customer-similar-products-margin"></div>
+								<div class="_customer-product-dop-page">
+									<a href="https://www.pulscen.ru/online-shop/banners" target="_blank" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: изображение', 'eventLabel':'Медийка'});"><img class="_customer-product-img" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/151924/content_pic_7.png" alt="" /></a>
+									<div class="_customer-product-text-block">
+										<a href="https://www.pulscen.ru/online-shop/banners" target="_blank" class="_customer-product-h" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход: название', 'eventLabel':'Медийка'});">Медийная реклама в товарных листингах Пульса цен</a>
+										<div class="_customer-product-text">Выделение среди конкурентов. Усиление продаж по выбранной группе товаров.</div>
+										<div class="_customer-product-order">
+											<div class="_customer-order-price">от <span class="_customer-price">30 000 ₽</span></div>
+											<div class="_customer-order-button ab-order js-apress-order-button js-get-order-form" data-company-contacts-url="https://one-shop.pulscen.ru/contacts" data-company-name="Магазин онлайн сервисов" data-params='{"company_id":"99701862", "message":"Добрый день! Меня интересует медийная реклама на портале Пульс цен."}' data-type="message" style="" onclick="dataLayer.push({ 'event':'GAevent', 'eventCategory':'МОРС', 'eventAction':'Переход по кнопке: подробнее', 'eventLabel':'Медийка'});">Заказать</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{crm_analytics:show_page(mors, Турбопоиск)}
+		</body>
+
+		<script type="text/javascript">
+			// Slider
+			var slides = document.querySelectorAll("._customer-slider ._customer-slider__slide"),
+				currentSlide = 0;
+			function nextSlide() {
+				slides[currentSlide].className = "_customer-slider__slide";
+				currentSlide = (currentSlide + 1) % slides.length;
+				slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+			}
+			function prevSlide() {
+				slides[currentSlide].className = "_customer-slider__slide";
+				if (currentSlide == 0) {
+					currentSlide = slides.length - 1;
+					slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+				} else {
+					currentSlide = (currentSlide - 1) % slides.length;
+					slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+				}
+			}
+			// end Slider
+		</script>
+
+		<script type="text/javascript">
+			function toggle(id) {
+				document.getElementById("conten").innerHTML = document.getElementById(id).innerHTML;
+			}
+			toggle("first");
+		</script>
+		<!-- Begin Me-Talk --><script type="text/javascript">
+			window.MeTalkSetup = { domain: "comkc.pulscen.ru" };
+			(function (d, w, m) {
+				window.supportAPIMethod = m;
+				var s = d.createElement("script");
+				s.type = "text/javascript";
+				s.id = "supportScript";
+				s.charset = "utf-8";
+				s.async = true;
+				var id = "9e71060b780fc267cbbfff6f8dec56ba";
+				s.src = "//me-talk.ru/support/support.js?h=" + id;
+				var sc = d.getElementsByTagName("script")[0];
+				w[m] =
+					w[m] ||
+					function () {
+						(w[m].q = w[m].q || []).push(arguments);
+					};
+				if (sc) sc.parentNode.insertBefore(s, sc);
+				else d.documentElement.firstChild.appendChild(s);
+			})(document, window, "MeTalk");</script
+		><!-- End Me-Talk -->
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function () {
+					try {
+						w.yaCounter200476 = new Ya.Metrika({
+							id: 200476,
+							clickmap: true,
+							trackLinks: true,
+							accurateTrackBounce: true,
+							webvisor: true,
+						});
+					} catch (e) {}
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () {
+						n.parentNode.insertBefore(s, n);
+					};
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else {
+					f();
+				}
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript
+			><div><img src="https://mc.yandex.ru/watch/200476" style="position: absolute; left: -9999px" alt="" /></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+			ym(56609113, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div><img src="https://mc.yandex.ru/watch/56609113" style="position: absolute; left: -9999px" alt="" /></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154353994-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-154353994-1");
+		</script>
+	</head></html
+>

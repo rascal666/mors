@@ -1,0 +1,19 @@
+<style media="screen">
+  .test {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+input {
+  display: none;
+}
+input:checked + label > div {
+  background-color: red;
+}
+</style>
+<div class="">
+  <input type="checkbox" id="colorbox">
+  <label for="colorbox">
+    <div class="test"></div>
+  </label>
+</div>

@@ -1,0 +1,137 @@
+/* Сброс врапперов*/
+    body {
+        min-width: 0 !important;
+        background-color: white;
+    }
+
+    .base-width {
+        background-color: transparent;
+        margin: 0;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .catalogue {
+        padding: 0;
+    }
+
+    .cms-page .col-middle {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0 !important;
+    }
+
+    .catalogue h1 {
+        display: none;
+    }
+
+    #content {
+        margin-top: 0;
+    }
+
+    .wrapper-text ul li {
+        list-style-type: none !important;
+    }
+
+    .wrapper-text table td {
+        padding: 20px;
+    }
+
+    .simple-breadcrumbs {
+      display: none !important;
+    }
+
+ /* --- */
+
+* {padding: 0; margin: 0}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: linear-gradient(to right, #1D3BD9, #D157E1);
+  color: #535353;
+}
+
+.new-tariffs-content {
+  max-width: 1200px;
+  margin: 4% auto;
+}
+
+.new-tariffs-h1 {
+  color: #fff;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* loading */
+
+.new-tariffs-loading-block {
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.new-tariffs-loading,
+.new-tariffs-loading:before,
+.new-tariffs-loading:after {
+  border-radius: 50%;
+  width: 0.7em;
+  height: 0.7em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.new-tariffs-loading {
+  color: #ffffff;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  left: 25px;
+  top: -9px;
+}
+.new-tariffs-loading:before,
+.new-tariffs-loading:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.new-tariffs-loading:before {
+  left: -1.7em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.new-tariffs-loading:after {
+  left: 1.7em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+/* loading */

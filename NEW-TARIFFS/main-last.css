@@ -1,0 +1,1168 @@
+/**
+ * /* Сброс врапперов
+ *
+ * @format
+ */
+
+body {
+	min-width: 0 !important;
+	background-color: white;
+}
+
+.base-width {
+	background-color: transparent;
+	margin: 0;
+	max-width: none;
+	min-width: 0;
+}
+
+.catalogue {
+	padding: 0;
+}
+
+.cms-page .col-middle {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+}
+
+.catalogue h1 {
+	display: none;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.wrapper-text ul li {
+	list-style-type: none !important;
+}
+
+.wrapper-text table td {
+	padding: 20px;
+}
+
+.simple-breadcrumbs {
+	display: none !important;
+}
+
+/* --- */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif !important;
+	background: linear-gradient(to right, #028dd8, #bc0337);
+	color: #535353;
+}
+
+.new-tariffs-content {
+	max-width: 80%;
+	margin: 2% auto;
+}
+
+.new-tariffs-h1 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0 0 40px 0;
+}
+
+.new-tariffs-h1-dop {
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 70px 0 40px 0;
+}
+
+.tariff-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 0 0 30px 0;
+	position: relative;
+}
+
+.tariff-description-start {
+	width: 40%;
+	min-height: 976px;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0px 16px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 0px 3px;
+	padding: 40px 50px 30px 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tariff-description-business {
+	width: 45%;
+	min-height: 704px;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0px 16px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 0px 3px;
+	padding: 40px 50px 30px 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tariff-description {
+	width: 40%;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0px 16px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 0px 3px;
+	padding: 40px 60px 30px 60px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tariff-price-region {
+	width: 60%;
+	min-width: 549px;
+	min-height: 630px;
+	background-color: #fafafa;
+	box-shadow: inset 0px 5px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 3px 3px 0px;
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	left: 40%;
+}
+
+.tariff-price {
+	width: 60%;
+	min-width: 549px;
+	min-height: 630px;
+	background-color: #fafafa;
+	box-shadow: inset 0px 5px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 3px 3px 0px;
+	font-size: 14px;
+}
+
+.tariff-description-h {
+	font-weight: bold;
+	font-size: 24px;
+	color: #2f3644;
+	margin: 0 0 10px 0;
+}
+
+.tariff-description-text {
+	font-size: 14px;
+	color: #424b5e;
+	margin: 10px 0;
+}
+
+.tariff-regionator-text {
+	font-size: 14px;
+	color: #424b5e;
+	margin: 10px 30px;
+}
+
+.tariff-opportunities {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+
+.tariff-h-regionator {
+	margin: 20px 0 15px 0;
+	padding: 14px 24px 24px 24px;
+	background-color: #f2f4f7;
+	border-radius: 3px;
+}
+
+.tariff-h-regionator-mobile {
+	display: none;
+}
+
+.opportunities-one {
+	width: 48%;
+	max-width: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 14px;
+	color: #424b5e;
+	margin: 0 0 20px 0;
+}
+
+.opportunities-one-block {
+	margin: 0 0 20px 0;
+}
+
+.opportunities-one-dop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 14px;
+	color: #424b5e;
+	margin: 15px 0 15px 0;
+}
+
+.opportunities-one-dop-all {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	font-size: 14px;
+	color: #424b5e;
+	margin: 15px 0;
+}
+
+.opportunities-one-text {
+	font-size: 14px;
+	color: #424b5e;
+}
+
+.opportunities-one-dop-all img {
+	margin: 5px 20px 0 0;
+}
+
+.opportunities-one-dop img {
+	margin: 0 10px 0 0;
+}
+
+.opportunities-one-h {
+	font-weight: 600;
+}
+
+.opportunities-one-img {
+	margin: 0 18px 0 0;
+}
+
+.opportunities-start-ul {
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.opportunities-start-ul li {
+	margin: 0 0 0 20px;
+}
+
+.tariff-opportunities-spisok {
+	margin: 10px 0;
+}
+
+.tariff-spisok-punkt {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 14px;
+}
+
+.tariff-spisok-punkt img {
+	width: 12px;
+	height: 12px;
+	margin: 0 10px 0 0;
+	opacity: 0.7;
+}
+
+.one-packet-of-4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-height: 158px;
+	border-bottom: 1px solid #dde1ed;
+	padding: 30px 60px;
+	box-sizing: border-box;
+}
+
+.one-packet-of-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-height: 210px;
+	border-bottom: 1px solid #dde1ed;
+	padding: 30px 60px;
+	box-sizing: border-box;
+}
+
+.packet-description {
+	margin: 0 5px 0 0;
+}
+
+.packet-name {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #424b5e;
+	font-weight: 800;
+	margin: 0 0 20px 0;
+}
+
+.packet-name img {
+	margin: 0 0 0 20px;
+}
+
+.packet-choice {
+}
+
+.packet-price {
+	font-size: 20px;
+	text-align: right;
+	font-weight: 600;
+	color: #5e7491;
+	margin: 0 0 20px 0;
+}
+
+.packet-price-currency {
+	font-size: 14px;
+}
+
+/* ВКЛАДКИ
+
+/* Стили секций с содержанием */
+
+.tariff-section {
+	display: none;
+}
+
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Прячем чекбоксы */
+
+.tariff-tabs-input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+
+.tariff-tabs-label {
+	display: inline-block;
+	padding: 20px 40px;
+	background-color: #f2f4f7;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: normal;
+	color: #424b5e;
+	margin: 0 -5px 0 0;
+}
+
+#start {
+	border-radius: 3px 0 0 0;
+}
+
+#all {
+	border-radius: 0 3px 0 0;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tariff-tabs-label:hover {
+	color: #069dfa;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+
+.tariff-tabs-input:checked + .tariff-tabs-label {
+	padding: 26px 40px 20px;
+	border-radius: 3px 3px 0 0 !important;
+	background-color: #ffffff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-tariff:checked ~ #content-tab1-tariff,
+#tab2-tariff:checked ~ #content-tab2-tariff,
+#tab3-tariff:checked ~ #content-tab3-tariff {
+	display: block;
+}
+
+/* end ВКЛАДКИ */
+
+/* РЕГИОНАТОР СТАРТ*/
+
+.region-section {
+	display: none;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.region-tabs-input {
+	display: none;
+	position: absolute;
+}
+
+.region-tabs-label {
+	display: inline-block;
+	padding: 15px 0 0 0;
+	margin: 0 15px 0 0;
+	font-weight: 600;
+	font-size: 14px;
+	color: #028dd8;
+	border-bottom: 1px dashed #028dd8;
+}
+
+.region-tabs-label:hover {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+	cursor: pointer;
+}
+
+.region-tabs-input:checked + .region-tabs-label {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+}
+
+#tab1-region:checked ~ #content-tab1-region,
+#tab2-region:checked ~ #content-tab2-region,
+#tab3-region:checked ~ #content-tab3-region {
+	display: block;
+}
+
+/* end РЕГИОНАТОР СТАРТ*/
+
+/* РЕГИОНАТОР СТАРТ для мобильных*/
+
+.region-section-mobile {
+	display: none;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.region-tabs-input-mobile {
+	display: none;
+	position: absolute;
+}
+
+.region-tabs-label-mobile {
+	display: inline-block;
+	padding: 15px 0 0 0;
+	margin: 0 15px 0 0;
+	font-weight: 600;
+	font-size: 14px;
+	color: #028dd8;
+	border-bottom: 1px dashed #028dd8;
+}
+
+.region-tabs-label-mobile:hover {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+	cursor: pointer;
+}
+
+.region-tabs-input-mobile:checked + .region-tabs-label-mobile {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+}
+
+#tab1-region-mobile:checked ~ #content-tab1-region-mobile,
+#tab2-region-mobile:checked ~ #content-tab2-region-mobile,
+#tab3-region-mobile:checked ~ #content-tab3-region-mobile {
+	display: block;
+}
+
+/* end РЕГИОНАТОР СТАРТ*/
+
+/* РЕГИОНАТОР БИЗНЕС*/
+
+.region-section-business {
+	display: none;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.region-tabs-input-business {
+	display: none;
+	position: absolute;
+}
+
+.region-tabs-label-business {
+	display: inline-block;
+	padding: 15px 0 0 0;
+	margin: 0 15px 0 0;
+	font-weight: 600;
+	font-size: 14px;
+	color: #028dd8;
+	border-bottom: 1px dashed #028dd8;
+}
+
+.region-tabs-label-business:hover {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+	cursor: pointer;
+}
+
+.region-tabs-input-business:checked + .region-tabs-label-business {
+	color: #ff7043;
+	border-bottom: 1px dashed #ff7043;
+}
+
+#tab1-region-business:checked ~ #content-tab1-region-business,
+#tab2-region-business:checked ~ #content-tab2-region-business {
+	display: block;
+}
+
+/* end РЕГИОНАТОР БИЗНЕС*/
+
+/* ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ */
+
+.new-tariffs-dop-uslugi {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.one-dop-usluga {
+	width: 32%;
+	min-width: 325px;
+	box-sizing: border-box;
+	padding: 45px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #424b5e;
+	margin: 0 0 30px 0;
+}
+
+.one-dop-usluga-media-start {
+	width: 100%;
+	min-width: 325px;
+	box-sizing: border-box;
+	padding: 45px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #424b5e;
+	margin: 0 0 30px 0;
+}
+
+.dop-usluga-text-1 {
+	color: #5e7491;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin: 0 0 15px 0;
+}
+
+.dop-usluga-included {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 15px 0;
+	align-items: center;
+}
+
+.dop-usluga-text-1-included {
+	color: #829a3a;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.dop-usluga-included img {
+	width: 14px;
+	height: 10px;
+	margin: 0 10px 0 0;
+}
+
+.dop-usluga-h {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #424b5e;
+	margin: 0 0 0px 0;
+}
+
+.dop-usluga-description {
+	min-height: 300px;
+}
+
+.dop-usluga-text {
+	margin: 0 0 15px 0;
+}
+
+.dop-usluga-text-h {
+	font-weight: 600;
+	margin: 15px 0 0 0;
+}
+
+.dop-usluga-text-punkt {
+}
+
+.dop-usluga-line {
+	height: 2px;
+	background-color: #dde1ed;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.dop-usluga-price {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: normal;
+	color: #5e7491;
+	margin: 0 0 15px 0;
+}
+
+.dop-usluga-currency {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: normal;
+	color: #5e7491;
+}
+
+.dop-usluga-button {
+	font-style: normal !important;
+	max-width: 135px !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	color: #028dd8 !important;
+	text-decoration: none !important;
+	border-bottom: 1px dashed #028dd8 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-style: normal !important;
+	cursor: pointer !important;
+}
+
+.dop-usluga-button:hover {
+	color: #ff7043 !important;
+	border-bottom: 1px dashed #ff7043 !important;
+}
+
+.dop-usluga-button-a {
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	color: #028dd8 !important;
+	text-decoration: none !important;
+	border-bottom: 1px dashed #028dd8 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-style: normal !important;
+	cursor: pointer !important;
+}
+
+.dop-usluga-button-a:hover {
+	color: #ff7043 !important;
+	border-bottom: 1px dashed #ff7043 !important;
+}
+
+/* END ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ */
+
+/* КНОПКИ */
+
+.pc-button-standart {
+	font-family: "Open Sans", sans-serif !important;
+	min-width: 185px;
+	max-width: 185px;
+	box-sizing: border-box;
+	padding: 12px 30px !important;
+	font-size: 14px !important;
+	font-style: normal !important;
+	white-space: nowrap !important;
+	color: #028dd8 !important;
+	border: 1px solid #028dd8 !important;
+	border-radius: 3px !important;
+	outline: 0 !important;
+	cursor: pointer !important;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.2s, color 0.2s;
+	text-decoration: none !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	background-color: transparent !important;
+}
+
+.pc-button-standart:hover {
+	background-color: #028dd8 !important;
+	color: #ffffff !important;
+}
+
+#pc-button-standart-mors {
+	min-width: 240px;
+	max-width: 240px;
+}
+
+.pc-button-standart-contacts {
+	font-family: "Open Sans", sans-serif !important;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 12px 30px !important;
+	font-size: 14px !important;
+	font-style: normal !important;
+	white-space: nowrap !important;
+	color: #ffffff !important;
+	border: 1px solid #ffffff !important;
+	border-radius: 3px !important;
+	outline: 0 !important;
+	cursor: pointer !important;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.2s, color 0.2s;
+	text-decoration: none !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	background-color: transparent !important;
+	margin: 30px 40px 0px 10px;
+}
+
+.pc-button-standart-contacts:hover {
+	background-color: #ffffff !important;
+	color: #445c9f !important;
+}
+
+/* КНОПКИ end */
+
+/* БЛОК ОБРАТНОЙ СВЯЗИ */
+
+.new-tariffs-contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	flex-wrap: wrap;
+	margin: 0 0 0px 0;
+}
+
+.tariffs-contacts-block {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.new-tariffs-contacts-block {
+	margin: 15px 0px 0px 0;
+}
+
+.new-tariffs-contacts-h1 {
+	color: #fff;
+	font-size: 36px;
+	margin: 0px 0px 20px 0;
+}
+
+.new-tariffs-contacts-h2 {
+	font-style: normal;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #fff;
+	margin: 0 0 20px 20px;
+}
+
+.new-tariffs-contacts-h3 {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #fff;
+	margin: 0px 80px 20px 20px;
+}
+
+.short-white-line {
+	height: 1px;
+	background: linear-gradient(to right, #c7cacc, #ffffff);
+	margin: 0 0 30px 0;
+}
+/* БЛОК ОБРАТНОЙ СВЯЗИ end */
+
+/* Баннер для Морса */
+
+.new-tariffs-mors-banner {
+	max-width: 1464px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+	background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/158180/content_group.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 36px 60px 36px 60px;
+	margin: 24px 0;
+	color: #424b5e;
+}
+
+.new-tariffs-mors-banner-h {
+	font-weight: 800;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 0 0 24px 0;
+}
+
+.new-tariffs-mors-banner-text {
+	font-size: 16px;
+	margin: 0 0 24px 0;
+	max-width: 480px;
+}
+
+/* end Баннер для Морса */
+
+.new-tariffs-nds-text {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #fff;
+	margin: 60px 0;
+}
+
+/* АДАПТАЦИЯ ПОД УСТРОЙСТВА */
+
+@media (max-width: 1600px) {
+	.new-tariffs-content {
+		max-width: 97%;
+		margin: 2% auto;
+	}
+
+	.new-tariffs-mors-banner {
+		background-image: none;
+	}
+}
+
+@media (max-width: 1280px) {
+	.new-tariffs-content {
+		max-width: 90%;
+		margin: 2% auto;
+	}
+
+	.new-tariffs-mors-banner {
+		background-image: none;
+	}
+
+	.tariff-opportunities {
+		flex-direction: column;
+	}
+
+	.opportunities-one {
+		justify-content: flex-start;
+	}
+
+	.opportunities-one {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.tariff-h-regionator {
+		display: block;
+		margin: 20px 0 15px 0;
+		padding: 14px 0 0 0;
+	}
+
+	.tariff-price-region {
+		width: 100%;
+		background-color: #fafafa;
+		box-shadow: inset 0px 5px 18px rgba(0, 0, 0, 0.12);
+		border-radius: 0px 3px 3px 0px;
+		font-size: 14px;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 40px 0 0 0;
+	}
+
+	.tariff-description-start {
+		width: 100%;
+		min-height: none;
+		padding: 0;
+		border-radius: 0px 3px 3px 3px;
+	}
+
+	.tariff-description-m-margin {
+		margin: 40px 40px 20px 40px;
+	}
+
+	.tariff-description {
+		padding: 40px;
+	}
+
+	.region-tabs-label {
+		margin: 0 0 0 40px;
+	}
+
+	.left-margin {
+		margin: 10px 20px 10px 40px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.new-tariffs-content {
+		max-width: 90%;
+		margin: 2% auto;
+	}
+
+	.new-tariffs-h1 {
+		font-size: 28px;
+	}
+
+	.tariff-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 0 30px 0;
+	}
+
+	.tariff-description {
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 0px 0px 0px 0px;
+	}
+
+	.tariff-price {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+	}
+
+	.tab-a-block {
+		width: 100%;
+		min-width: 365px;
+	}
+
+	.new-tariffs-dop-uslugi {
+		justify-content: center;
+	}
+
+	.one-dop-usluga {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	.dop-usluga-description {
+		min-height: auto;
+	}
+}
+
+@media (max-width: 900px) {
+	.one-packet-of-4 {
+		padding: 30px;
+	}
+
+	.one-packet-of-3 {
+		padding: 30px;
+	}
+
+	.tariff-price-region {
+		min-width: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.one-packet-of-4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.one-packet-of-3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.packet-price {
+		text-align: left;
+		margin: 30px 0 20px 0;
+	}
+}
+
+@media (max-width: 630px) {
+	.tariff-description {
+		padding: 30px;
+	}
+
+	.tariff-description-m-margin {
+		margin: 30px 30px 20px 30px;
+	}
+
+	.tariff-opportunities {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.opportunities-one {
+		width: 100%;
+		max-width: none;
+		justify-content: flex-start;
+	}
+
+	.tariffs-contacts-block {
+		flex-direction: row-reverse;
+	}
+
+	.tariff-tabs-label {
+		padding: 15px 20px;
+	}
+
+	.tariff-tabs-input:checked + .tariff-tabs-label {
+		padding: 15px 20px;
+		border-radius: 3px 3px 0 0 !important;
+		background-color: #ffffff;
+	}
+
+	.tariff-description-start {
+		border-radius: 0 0 3px 3px;
+	}
+
+	.new-tariffs-mors-banner {
+		padding: 30px;
+	}
+
+	.new-tariffs-mors-banner-h {
+		font-size: 20px;
+	}
+
+	#pc-button-standart-mors {
+		min-width: 0;
+	}
+
+	.one-dop-usluga-media-start {
+		min-width: 0;
+		padding: 30px;
+	}
+
+	.one-dop-usluga {
+		min-width: 0;
+		padding: 30px;
+	}
+
+	.new-tariffs-contacts-h1 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.tariffs-contacts-block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.new-tariffs-contacts-block {
+		text-align: center;
+	}
+
+	.new-tariffs-contacts-h3 {
+		margin: 0 0 20px 20px;
+	}
+
+	.pc-button-standart-contacts {
+		margin: 30px auto 0 auto;
+	}
+
+	.region-tabs-label {
+		border-bottom: none;
+	}
+
+	.region-tabs-label:hover {
+		border-bottom: none;
+	}
+
+	.region-tabs-input:checked + .region-tabs-label-mobile {
+		border-bottom: none;
+	}
+}
+
+@media (max-width: 366px) {
+	.tariff-tabs-label {
+		padding: 10px 15px;
+		font-size: 13px;
+	}
+
+	.tariff-tabs-input:checked + .tariff-tabs-label {
+		padding: 10px 15px;
+		border-radius: 3px 3px 0 0 !important;
+		background-color: #ffffff;
+	}
+}
+
+/* АДАПТАЦИЯ ПОД УСТРОЙСТВА end */

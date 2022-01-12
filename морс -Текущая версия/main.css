@@ -1,0 +1,1016 @@
+/* Сброс врапперов*/
+body {
+  min-width: 0 !important;
+  background-color: white;
+}
+
+.base-width {
+  background-color: transparent;
+  margin: 0;
+  max-width: none;
+  min-width: 0;
+}
+
+.catalogue {
+  padding: 0;
+}
+
+.cms-page .col-middle {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 !important;
+}
+
+.catalogue h1 {
+  display: none;
+}
+
+#content {
+  margin-top: 0;
+}
+
+/* .wrapper-text ul li {
+      list-style-type: none !important;
+  } */
+
+.wrapper-text table td {
+  padding: 20px;
+}
+
+.simple-breadcrumbs {
+  display: none !important;
+}
+
+/* --- */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f4f7;
+}
+
+._customer-mors {
+  max-width: 1368px;
+  margin: 40px auto;
+}
+
+._customer-mors-h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 38px;
+  margin: 0 0 36px 0;
+  color: #424b5e;
+}
+
+._customer-mors-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+._customer-mors-left-menu {
+  width: 312px;
+}
+
+._customer-mors-right {
+  max-width: 1056px;
+  width: 100%;
+}
+
+._customer-right-products {
+}
+
+/* Хлебные крошки */
+
+._customer-mors-bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  color: #5e7491;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 36px 0 24px 0;
+  line-height: 24px;
+  flex-wrap: wrap;
+}
+
+._customer-mors-bread-crumbs a {
+  text-decoration: none !important;
+  color: #5e7491 !important;
+  font-weight: 600 !important;
+}
+
+._customer-mors-bread-crumbs a:hover {
+  color: #ff7043 !important;
+}
+
+._customer-mors-bread-crumbs-r {
+  font-weight: 800;
+  font-size: 16px;
+  margin: 0 12px;
+}
+
+/* end Хлебные крошки */
+
+/* БЛОК МЕНЮ */
+
+._customer-left-menu-h1 {
+  font-weight: bold;
+  font-size: 26px;
+  color: #424b5e;
+  width: 312px;
+  margin: 0px 0 0;
+}
+
+/* стили ссылок меню */
+
+._customer-menu-point-goods-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162297/content_g-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-goods {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162299/content_.png.);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-goods:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162297/content_g-r.png);
+}
+
+._customer-menu-point-site-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162293/content_site-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-site {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162041/content_site.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-site:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162293/content_site-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-seo-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162295/content_seo-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-seo {
+  background-image: url(https://www.pulscen.ru//system/ckeditor_assets/pictures/162040/content_seo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-seo:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162295/content_seo-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-banners-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162292/content_media-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-banners {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162039/content_media.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-banners:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162292/content_media-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-integration-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162290/content_int-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-integration {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162037/content_int.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-integration:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162290/content_int-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-region-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/223119/content_group_2.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-region {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/223120/content_group_3.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-region:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/223119/content_group_2.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-all-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162289/content_all-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-all {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162036/content_all.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-all:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162289/content_all-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-spec-active {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162291/content_spec-r.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point-spec {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162042/content_spec.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0 18px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+}
+
+._customer-menu-point-spec:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162291/content_spec-r.png);
+  color: #ff7043 !important;
+}
+
+._customer-menu-point-main {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162038/content_main.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px 0 12px 40px;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  margin: 0 0 12px 0;
+}
+
+._customer-menu-point-main:hover {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162404/content_main-b.png);
+  color: #028dd8 !important;
+}
+
+._customer-menu-point {
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 0;
+  align-items: center;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+._customer-menu-point img {
+  margin: 0 24px 0 0;
+}
+
+._customer-menu-point-a-active {
+  color: #ff7043 !important;
+  text-decoration: none !important;
+}
+
+._customer-menu-point-a-main {
+  color: #a2a9b4 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+._customer-menu-point-a-main:hover {
+  color: #028dd8 !important;
+  text-decoration: none !important;
+}
+
+._customer-menu-point-a {
+  color: #5e7491 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+._customer-menu-point-a:hover {
+  color: #ff7043 !important;
+  text-decoration: none !important;
+}
+
+._customer-menu-point-my-orders {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #5e7491 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+._customer-menu-point-my-orders:hover {
+  color: #ff7043 !important;
+  text-decoration: none !important;
+}
+
+._customer-menu {
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #dde1ed;
+  width: 204px;
+  margin: 0 0 18px 0;
+}
+
+/* END БЛОК МЕНЮ */
+
+/* БЛОК ОБРАТНОЙ СВЯЗИ */
+
+._customer-mors-left-contacts {
+  margin: 50px 0 0 0;
+}
+
+._customer-contacts-h {
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #424b5e;
+  padding: 10px 0;
+  border-bottom: 1px solid #dde1ed;
+  margin: 0 0 20px 0;
+  width: 210px;
+}
+
+._customer-contacts-photo-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+._customer-contacts-photo-block img {
+  margin: 0 10px 0 0;
+}
+
+._customer-contacts-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2f3644;
+}
+
+._customer-contacts-function {
+  font-size: 14px;
+  color: #5e7491;
+  margin: 0 0 4px 0;
+}
+
+._customer-contacts-online {
+  font-weight: 600;
+  font-size: 14px;
+  color: #a3bd49;
+}
+
+._customer-contacts-phone {
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+._customer-contacts-phone img {
+  margin: 0 24px 0 0;
+}
+
+._customer-mors-phone {
+  display: inline-block !important;
+  font-size: 14px !important;
+  color: #028dd8 !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent !important;
+  border-bottom: 1px dashed #028dd8;
+}
+
+._customer-mors-mail {
+  font-size: 14px !important;
+  color: #028dd8 !important;
+  font-weight: 600;
+  border-bottom: 1px dashed #028dd8 !important;
+  text-decoration: none !important;
+}
+
+/* END БЛОК ОБРАТНОЙ СВЯЗИ */
+
+/* БЛОК ОПИСАНИЯ */
+
+._customer-mors-right-h {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #424b5e;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-white-block {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+}
+
+._customer-mors-right-des {
+  font-size: 16px;
+  color: #5e7491;
+  margin: 0 0 24px 0;
+  font-weight: normal;
+}
+
+._customer-mors-right-des-a {
+  font-weight: 600 !important;
+  color: #028dd8 !important;
+  text-decoration: none !important;
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/163345/content_content_main-b_copy.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  display: block;
+  width: 195px;
+  margin: 0 0 0 8px;
+}
+
+._customer-mors-right-des-a:hover {
+  color: #ff7043 !important;
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/163350/content_content_main-b_copy2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#_customer-des-a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+#_customer-des-no-margin {
+  margin: 0;
+}
+
+._customer-mors-right-h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  color: #424b5e;
+  margin: 36px 0 0 0;
+}
+
+/* end БЛОК ОПИСАНИЯ */
+
+/* БЛОК ТАРИФОВ */
+
+._customer-right-tariffs {
+  padding: 10px 0 10px 40px;
+  border-left: 4px solid #dde1ed;
+}
+
+._customer-tariffs-package {
+  border-bottom: 1px solid #dde1ed;
+  width: 100%;
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+}
+
+._customer-tariffs-h {
+  font-weight: bold;
+  font-size: 18px;
+  color: #424b5e;
+  margin: 0 0 20px 0;
+}
+
+._customer-tariffs-text {
+  font-size: 14px;
+  color: #5e7491;
+}
+
+._customer-tariffs-other-offers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+._customer-tariffs-offer {
+  width: 328px;
+}
+
+._customer-offer-text {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a2a9b4;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+._customer-tariffs-white-block {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 24px 60px;
+  margin: 30px 0 40px 0;
+}
+
+._customer-white-block-h {
+  font-size: 24px;
+  color: #424b5e;
+}
+
+._customer-white-block-des {
+  margin: 25px 0 35px 0;
+  font-size: 14px;
+  line-height: 214%;
+  color: #5e7491;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+
+._customer-tariff-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+  width: 317px;
+}
+
+/* END БЛОК ТАРИФОВ */
+
+/* БЛОК ПРОДУКТОВ */
+
+._customer-products-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1116px;
+}
+
+._customer-product {
+  width: 312px;
+  margin: 60px 60px 0 0;
+}
+
+#_customer-product-24 {
+  margin: 24px 60px 0 0;
+}
+
+#_customer-product-tarif {
+  margin: 0;
+}
+
+._customer-product-h {
+  font-weight: bold !important;
+  font-size: 14px !important;
+  color: #028dd8 !important;
+  text-decoration: none !important;
+}
+
+._customer-product-h:hover {
+  color: #ff7043 !important;
+}
+
+._customer-product-h:active {
+  color: #028dd8 !important;
+}
+
+._customer-product-text {
+  font-size: 14px;
+  color: #2f3644;
+  line-height: 170%;
+  height: 48px;
+  margin: 20px 0 0 0;
+}
+
+._customer-product-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+._customer-order-price {
+  font-size: 14px;
+  color: #424b5e;
+}
+
+._customer-order-free {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+._customer-price {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+._customer-product-img {
+  border-radius: 3px;
+  margin: 0 0 20px 0 !important;
+}
+
+._customer-mors-right-grey {
+  background-color: #dfe5ec;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 36px 0 0 0;
+}
+
+._customer-mors-grey-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* END БЛОК ПРОДУКТОВ */
+
+/* КНОПКИ */
+
+._customer-offer-button {
+  width: 100%;
+  display: inline-block !important;
+  padding: 10px 0 !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  white-space: nowrap !important;
+  color: #028dd8 !important;
+  border: 1px solid #028dd8 !important;
+  border-radius: 3px !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent !important;
+}
+
+._customer-offer-button:hover {
+  border: 1px solid #028dd8 !important;
+  color: #ffffff !important;
+  background-color: #028dd8 !important;
+}
+
+._customer-order-button {
+  width: 112px !important;
+  height: 48px !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  white-space: nowrap !important;
+  color: #028dd8 !important;
+  border: 1px solid #028dd8 !important;
+  border-radius: 3px !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+}
+
+._customer-order-button:hover {
+  border: 1px solid #028dd8 !important;
+  color: #ffffff !important;
+  background-color: #028dd8 !important;
+}
+
+._customer-order-button-2 {
+  width: 220px !important;
+  height: 48px !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  white-space: nowrap !important;
+  color: #028dd8 !important;
+  border: 1px solid #028dd8 !important;
+  border-radius: 3px !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+}
+
+._customer-order-button-2:hover {
+  border: 1px solid #028dd8 !important;
+  color: #ffffff !important;
+  background-color: #028dd8 !important;
+}
+
+._customer-order-button-spec {
+  width: 112px !important;
+  height: 48px !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  white-space: nowrap !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 3px !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+}
+
+._customer-order-button-spec:hover {
+  border: 1px solid #ffffff !important;
+  color: #063155 !important;
+  background-color: #ffffff !important;
+}
+
+/* Слайдер для спецпредложений */
+
+._customer-mors-slider {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162225/content_back-sl.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+._customer-mors-slider-h {
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+  margin: 0 0 20px 0;
+}
+
+._customer-mors-slider-data {
+  font-size: 18px;
+  color: #069dfa;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+}
+
+._customer-mors-slider-des {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+._customer-mors-slider-a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffcd50 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+._customer-mors-slider-a img {
+  margin: 5px 0 0 12px;
+}
+
+#_customer-product-spec {
+  width: 300px;
+  margin: 36px 40px 0 0;
+  color: #ffffff !important;
+}
+
+#_customer-product-img-spec {
+  width: 300px;
+  border: 1px solid #bbb;
+}
+
+#_customer-product-h-spec {
+  color: #ffffff !important;
+}
+
+#_customer-product-text {
+  color: #ffffff !important;
+}
+
+#_customer-order-price-spec {
+  color: #ffffff !important;
+  font-weight: none !important;
+  font-size: 24px;
+}
+
+._customer-mors-s-back {
+  padding: 30px 40px 36px 40px;
+  background-color: rgba(47, 62, 74, 0.75);
+}
+
+/* end Слайдер для спецпредложений */
+
+/* КНОПКИ END */
+
+@media (max-width: 1400px) {
+  ._customer-mors-left-menu {
+    display: none;
+  }
+
+  ._customer-mors {
+    width: 90%;
+    max-width: 1056px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  ._customer-products-block {
+    width: auto;
+  }
+
+  ._customer-mors-h1 {
+    font-size: 30px;
+  }
+}

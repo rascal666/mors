@@ -1,0 +1,35 @@
+<div class="">
+  <a href='javascript://' onclick='toggle("first");'>
+      Старт
+  </a>
+  <a href='javascript://' onclick='toggle("second");'>
+      Бизнес
+  </a>
+  <a href='javascript://' onclick='toggle("second2");'>
+      Всё включено
+  </a>
+</div>
+
+<div id='conten'>
+</div>
+
+<div id='first' style='display: none'>
+  <div class="tariff-description-h">Тарифы "Старт"</div>
+  <div class="tariff-description-text">Начните продажи на торговой площадке. Получайте клиентов с рубрик Пульса цен и заявок Спроса с помощью тарифов Старт. Чем выше тариф - тем больше клиентов.</div>
+ </div>
+ <div id='second' style='display: none'>
+   <div class="tariff-description-h">Тарифы "Бизнес"</div>
+   <div class="tariff-description-text">Создайте полноценный продающий сайт и продавайте товары в несколько регионов. Тарифы Бизнес включают в себя все услуги тарифов Старт.</div>
+ </div>
+ <div id='second2' style='display: none'>
+   <div class="tariff-description-h">Тарифы "Всё включено"</div>
+   <div class="tariff-description-text">Создайте полноценный продающий сайт и продавайте товары в несколько регионов. Тарифы Бизнес включают в себя все услуги тарифов Старт.</div>
+ </div>
+
+
+ <script type='text/javascript'>
+     function toggle(id) {
+         document.getElementById("conten").innerHTML = document.getElementById(id).innerHTML;
+     }
+     toggle("first");
+ </script>

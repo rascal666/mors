@@ -1,0 +1,346 @@
+/* Сброс врапперов*/
+  body {
+      min-width: 0 !important;
+      background-color: white;
+  }
+
+  .base-width {
+      background-color: transparent;
+      margin: 0;
+      max-width: none;
+      min-width: 0;
+  }
+
+  .catalogue {
+      padding: 0;
+  }
+
+  .cms-page .col-middle {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0 !important;
+  }
+
+  .catalogue h1 {
+      display: none;
+  }
+
+  #content {
+      margin-top: 0;
+  }
+
+  /* .wrapper-text ul li {
+      list-style-type: none !important;
+  } */
+
+  .wrapper-text table td {
+      padding: 20px;
+  }
+
+  .simple-breadcrumbs {
+    display: none !important;
+  }
+
+/* --- */
+
+* {padding: 0; margin: 0}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2F4F7;
+}
+
+._customer-mors {
+  max-width: 1368px;
+  margin: 36px auto;
+  color: #424B5E;
+  font-size: 16px;
+}
+
+._customer-mors-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 36px 0;
+}
+
+._customer-mors-des-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+._customer-mors-des {
+  max-width: 1128px;
+  color: #5E7491;
+  font-weight: normal;
+}
+
+#_customer-des-no-margin {
+  margin: 0;
+}
+
+._customer-mors-des-a {
+  font-size: 16px !important;
+  font-weight: 600;
+  color: #028DD8 !important;
+  text-decoration: none !important;
+}
+
+._customer-mors-des-a:hover {
+  color: #FF7043 !important;
+}
+
+._customer-mors-des-a:active {
+  color: #028DD8 !important;
+}
+
+/* Слайдер для спецпредложений */
+
+._customer-mors-slider {
+  background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162225/content_back-sl.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 36px 0;
+  padding: 36px 60px 46px 60px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+._customer-mors-slider-h {
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+  margin: 0 0 36px 0;
+}
+
+._customer-mors-slider-data {
+  font-size: 18px;
+  color: #069DFA;
+  font-weight: 800;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-slider-des {
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-slider-a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFCD50 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+._customer-mors-slider-a img {
+  margin: 5px 0 0 12px;
+}
+
+/* end Слайдер для спецпредложений */
+
+/*  */
+
+._customer-mors-flex-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+._customer-mors-flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 432px;
+}
+
+._customer-mors-orange {
+  background: #EF5E31;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-red {
+  background: #B00D48;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-violet {
+  background: #7732CF;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-green {
+  background: #829A3A;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-blue {
+  background: #24A393;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-flex-block-h {
+  font-size: 22px;
+  margin: 12px 0 24px 0;
+  font-weight: 700;
+}
+
+._customer-mors-flex-block-a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFCD50 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  margin: 24px 0 0 0;
+}
+
+._customer-mors-flex-block-a img {
+  margin: 5px 0 0 12px;
+}
+
+._customer-mors-a-block {
+  color: #ffffff !important;
+  text-decoration: none;
+  display: block;
+}
+
+._customer-mors-contacts {
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  padding: 36px;
+}
+
+._customer-mors-contacts-h {
+  font-size: 22px;
+  font-weight: 700;
+  color: #424B5E;
+  margin: 0 0 24px 0;
+}
+
+._customer-mors-contacts-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #028DD8;
+}
+
+._customer-mors-contacts-1 img {
+  margin: 0 12px 0 0;
+}
+
+._customer-mors-contacts-a {
+  color: #028DD8 !important;
+  text-decoration: none !important;
+}
+
+._customer-mors-contacts-a:hover {
+  color: #FF7043 !important;
+}
+
+
+
+/*  */
+
+
+@media(max-width: 1330px) {
+
+  ._customer-mors-flex-column {
+    width: 100%;
+  }
+
+  ._customer-mors-orange {
+    padding: 20px;
+  }
+
+  ._customer-mors-red {
+    padding: 20px;
+  }
+
+  ._customer-mors-green {
+    padding: 20px;
+  }
+
+  ._customer-mors-violet {
+    padding: 20px;
+  }
+
+  ._customer-mors-blue {
+    padding: 20px;
+  }
+
+  ._customer-mors-slider {
+    padding: 24px 20px 36px 20px;
+  }
+
+  ._customer-mors-des-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ._customer-mors-des-a {
+    margin: 24px 0 0 0;
+  }
+
+  ._customer-mors-start {
+    margin: 0 20px;
+  }
+
+}
+
+@media(max-width: 725px) {
+
+  ._customer-mors-h1 {
+    font-size: 30px;
+  }
+
+  ._customer-mors-slider-h {
+    font-size: 28px;
+
+  }
+
+}
