@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+  max-width: 1920px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 36px;
+  padding-top: 80px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: left;
+  text-decoration: none;
+}
+.fat{
+  font-weight: 800;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.carts{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 24px;
+}
+.cart{
+  max-width: 300px;
+}
+.cart__title{
+  color: #1ba4ca;
+  font-weight: 700;
+  margin: 16px 0;
+}
+.cart__price{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 16px;
+  justify-items: end;
+}
+
+.navigation{
+  max-width: 300px;
+  display: grid;
+  grid-gap: 24px;
+}
+.navigation__placement{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/318377/content_content.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__placement:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162297/content_g-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+
+.navigation__site{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162041/content_site.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__site:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162293/content_site-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__seo{
+  position: relative;
+  background: url(https://www.pulscen.ru//system/ckeditor_assets/pictures/162040/content_seo.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__seo:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162295/content_seo-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__media{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162039/content_media.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__media:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162292/content_media-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__integration{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162037/content_int.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__integration:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162290/content_int-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__region{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/223120/content_group_3.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__region:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/223119/content_group_2.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__all{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162036/content_all.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+}
+.navigation__all:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162289/content_all-r.png);
+    color: #ff7043 !important;
+    cursor: pointer;
+}
+
+.navigation__home{
+  position: relative;
+  background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162038/content_main.png) no-repeat 0% 50% ;
+      padding-left: 36px;
+      color: #7e7e7e;
+}
+.navigation__home:hover {
+    background-image: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/162404/content_main-b.png);
+  color: #028dd8 !important;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
