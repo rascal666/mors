@@ -69,7 +69,10 @@
 .navigation{
   max-width: 300px;
   display: grid;
-  grid-gap: 24px;
+      align-content: baseline;
+}
+.navigation__item {
+  padding: 16px 0;
 }
 .navigation__placement{
   position: relative;

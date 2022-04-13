@@ -1,7 +1,11 @@
 const catalogCarts = {
     seo: [
         {
+            title: 'Продвижение и SEO-оптимизация сайта',
+        },
+        {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/318342/content_megatovary_891.png',
+            srcPages: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/290415/content_turbo_poisk_888.png',
             title: 'Турбопоиск',
             description: 'Контекстная реклама ваших товаров, настроенная на целевые запросы в Яндекс и Google.',
             price: '60 000 ₽',
@@ -27,8 +31,6 @@ const catalogCarts = {
             priceNote: '/ квартал',
             link: 'https://ekb.pulscen.ru/online-shop/turbonet'
         },
-
-
     ],
     media: [
         {
@@ -68,6 +70,16 @@ const catalogCarts = {
             link: 'https://www.pulscen.ru/online-shop/banner_seti'
         },
 
+    ],
+    placement: [
+    ],
+    site: [
+    ],
+    integration: [
+    ],
+    region: [
+    ],
+    all: [
     ]
 
 }
