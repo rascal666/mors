@@ -1,28 +1,29 @@
 import React, { useState, useRef } from 'react';
 import './App.css';
-import Cart from './component/cart';
-import catalogCarts from './bd/catalogCarts';
-import Navigation from './component/navigation';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/home';
 import TurboSearch from './pages/turboSearch';
+import Adjustable from './pages/adjustable';
+
+import TurboMiks from './pages/turboMiks'
 
 
 function App () {
+  const [homeTab, setHomeTab] = useState('seo');
 
-  const [tab, setTab] = useState('seo');
-
+  const [dataClickCart, setDataClickCart] = useState('');
+  const [sectionTitle, setSectionTitle] = useState('');
 
   return (
     <div className="App">
-
-      <Navigation setTab={setTab} />
-      <div className='carts'>
-        {
-          catalogCarts[tab].map((cart, index) =>
-            <Cart src={cart.src} id={index} title={cart.title} description={cart.description} price={cart.price} link={cart.link} priceNoteBefore={cart.priceNoteBefore} priceNote={cart.priceNote} />
-          )
-        }
-      </div>
-      <TurboSearch />
+      <Routes>
+        <Route path="/" component={Home}>
+          <Route index element={<Home setHomeTab = {setHomeTab} setDataClickCart={setDataClickCart}/> }  />
+          <Route path="adjustable" element={<Adjustable homeTab={homeTab} setHomeTab={setHomeTab} setDataClickCart={setDataClickCart} setSectionTitle={setSectionTitle}/> }  />
+          <Route path="turboSearch" element={<TurboSearch homeTab={homeTab} dataClickCart ={dataClickCart} sectionTitle={sectionTitle}/> }  />
+          <Route path="turboMiks" element={<TurboMiks homeTab={homeTab} />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 const catalogCarts = {
     seo: [
-        {
-            title: 'Продвижение и SEO-оптимизация сайта',
-        },
+        // {
+        //     title: 'Продвижение и SEO-оптимизация сайта',
+        // },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/318342/content_megatovary_891.png',
             srcPages: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/290415/content_turbo_poisk_888.png',
@@ -11,7 +11,7 @@ const catalogCarts = {
             price: '60 000 ₽',
             priceNoteBefore: '',
             priceNote: '/ квартал',
-            link: 'https://ekb.pulscen.ru/online-shop/turbosearch'
+            linkPages: '/turboSearch'
         },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/318340/content_megatovary_892.png',
@@ -20,7 +20,7 @@ const catalogCarts = {
             price: '75 000 ₽',
             priceNoteBefore: '',
             priceNote: '/ квартал',
-            link: 'https://www.pulscen.ru/online-shop/Turbomiks'
+            linkPages: '/turboMiks'
         },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/318341/content_megatovary_893.png',
@@ -29,7 +29,7 @@ const catalogCarts = {
             price: '60 000 ₽',
             priceNoteBefore: '',
             priceNote: '/ квартал',
-            link: 'https://ekb.pulscen.ru/online-shop/turbonet'
+            linkPages: 'https://ekb.pulscen.ru/online-shop/turbonet'
         },
     ],
     media: [
@@ -40,7 +40,7 @@ const catalogCarts = {
             price: '30 000 ₽',
             priceNoteBefore: 'от',
             priceNote: '',
-            link: 'https://www.pulscen.ru/online-shop/banners'
+            linkPages: 'https://www.pulscen.ru/online-shop/banners'
         },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/290424/content_vitriny_312.png',
@@ -49,7 +49,7 @@ const catalogCarts = {
             price: '5 000 ₽',
             priceNoteBefore: 'от',
             priceNote: '/ мес',
-            link: 'https://www.pulscen.ru/online-shop/Turbomiks'
+            linkPages: 'https://www.pulscen.ru/online-shop/Turbomiks'
         },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/290425/content_premium_blok_312.png',
@@ -58,7 +58,7 @@ const catalogCarts = {
             price: '10 000 ₽',
             priceNoteBefore: 'от',
             priceNote: '/ мес',
-            link: 'https://www.pulscen.ru/online-shop/premium-one'
+            linkPages: 'https://www.pulscen.ru/online-shop/premium-one'
         },
         {
             src: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/290426/content_bannery_v_reklamnyh_setyah_312.png',
@@ -67,7 +67,7 @@ const catalogCarts = {
             price: '30 000 ₽',
             priceNoteBefore: 'от',
             priceNote: '/ мес',
-            link: 'https://www.pulscen.ru/online-shop/banner_seti'
+            linkPages: 'https://www.pulscen.ru/online-shop/banner_seti'
         },
 
     ],

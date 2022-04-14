@@ -8,6 +8,11 @@
   grid-gap: 36px;
   padding-top: 80px;
 }
+.home{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 80px;
+}
 
 *{
   padding: 0;
@@ -48,7 +53,8 @@
 
 .carts{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 24px;
 }
 .cart{
@@ -68,6 +74,7 @@
 
 .navigation{
   max-width: 300px;
+  min-width: 250px;
   display: grid;
       align-content: baseline;
 }
