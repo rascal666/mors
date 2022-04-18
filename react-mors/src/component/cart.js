@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Cart (props) {
     return (
-        <div key={props.id} className="cart" onClick={() => props.setDataClickCart(props.title)}>
+        <div key={props.id} className="cart" >
                 <Link to={{pathname:props.linkPages}}>
                     <img src={props.src}></img>
                 </Link>

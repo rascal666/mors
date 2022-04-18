@@ -8,10 +8,10 @@ import Navigation from '../component/navigation';
 
 function Adjustable (props) {
 
-    console.log(props.homeTab);
+  
     return (
         <div className="home">
-            <Navigation setHomeTab={props.setHomeTab} setSectionTitle={props.setSectionTitle} />
+            <Navigation setHomeTab={props.setHomeTab} />
             <div className="carts">
                 {catalogCarts[props.homeTab].map((cart, index) => (
                     <Cart

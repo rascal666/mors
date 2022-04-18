@@ -30,6 +30,16 @@
   pointer-events: none;
 }
 
+.crumbs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.turboSearch__title{
+  font-size: 24px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

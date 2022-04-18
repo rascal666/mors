@@ -7,7 +7,6 @@ function Home (props) {
 
     function someFunc(e) {
         props.setHomeTab(e.target.getAttribute('tab'))
-        props.setDataClickCart(e.target.innerHTML)
     }
 
     return (
