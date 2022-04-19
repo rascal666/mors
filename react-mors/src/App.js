@@ -12,29 +12,33 @@ function App () {
   const [sectionTitle, setSectionTitle] = useState('');
   const [serviceTitle, setServiceTitle] = useState('');
   const [fff, setFff] = useState('');
+  // const [titleForBD, settitleForBD] = useState('');
 
-    const arrHeading = [
-      {
-          title: 'Продвижение и SEO-оптимизация сайта',
-              arr: ['Турбопоиск','Турбомикс', 'Турбосети', 'Турботаргет', ]
-      },
-      {
-          title: 'Медийная реклама',
-              arr: ['Баннерная реклама в товарных листингах Пульса цен','Витрины - текстово - графическое объявление на Пульсе цен', 'Премиум блок - фиксированное место в топе рубрик Пульса цен', 'Баннеры в рекламных сетях Яндекс и Гугл']
-      },
+  const arrHeading = [
+    {
+      title: 'Продвижение и SEO-оптимизация сайта',
+      titleForBD: 'seo',
+      arr: ['Турбопоиск', 'Турбомикс', 'Турбосети', 'Турботаргет',]
+    },
+    {
+      title: 'Медийная реклама',
+      titleForBD: 'seo',
+      arr: ['Баннерная реклама в товарных листингах Пульса цен', 'Витрины - текстово - графическое объявление на Пульсе цен', 'Премиум блок - фиксированное место в топе рубрик Пульса цен', 'Баннеры в рекламных сетях Яндекс и Гугл']
+    },
 
   ]
 
-  useEffect(() =>{  
+  useEffect(() => {
     for (let index = 0; index < arrHeading.length; index++) {
-        const element = arrHeading[index];
-        element.arr.forEach(elementServiceTitle => {
-            if (elementServiceTitle == serviceTitle) {    
-                setSectionTitle(element.title)
-            }
-        });
+      const element = arrHeading[index];
+      element.arr.forEach(elementServiceTitle => {
+        if (elementServiceTitle == serviceTitle) {
+          setSectionTitle(element.title)
+          // settitleForBD(element.titleForBD)
+        }
+      });
     }
- })
+  })
 
 
 
@@ -42,10 +46,10 @@ function App () {
     <div className="App">
       <Routes>
         <Route path="/" component={Home}>
-          <Route index element={<Home setHomeTab = {setHomeTab} /> }  />
-          <Route path="adjustable" element={<Adjustable homeTab={homeTab} setHomeTab={setHomeTab} /> }  />
-          <Route path="turboSearch" element={<TurboSearch homeTab={homeTab}  sectionTitle={sectionTitle}  serviceTitle={serviceTitle} setServiceTitle={setServiceTitle} setFff={setFff}/> }  />
-          <Route path="turboMiks" element={<TurboMiks homeTab={homeTab} sectionTitle={sectionTitle}  serviceTitle={serviceTitle} setServiceTitle={setServiceTitle} />} />
+          <Route index element={<Home setHomeTab={setHomeTab} />} />
+          <Route path="adjustable" element={<Adjustable homeTab={homeTab} setHomeTab={setHomeTab} />} />
+          <Route path="turboSearch" element={<TurboSearch homeTab={homeTab} sectionTitle={sectionTitle} serviceTitle={serviceTitle} setServiceTitle={setServiceTitle} setFff={setFff} price='20 000 ₽' />} />
+          <Route path="turboMiks" element={<TurboMiks homeTab={homeTab} sectionTitle={sectionTitle} serviceTitle={serviceTitle} setServiceTitle={setServiceTitle} />} />
         </Route>
       </Routes>
     </div>
