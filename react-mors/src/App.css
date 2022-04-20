@@ -26,6 +26,13 @@ background: #FFFFFF;
     margin: 0 0 12px 0;
 }
 
+.similarServices{
+  display: grid;
+      grid-auto-flow: column;
+    justify-content: start;
+    grid-gap: 80px;
+}
+
 *{
   padding: 0;
   margin: 0;

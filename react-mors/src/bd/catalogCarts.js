@@ -82,21 +82,5 @@ const catalogCarts = {
     all: [
     ]
 }
-// let catalogCartsAll = []
-
-
-
-// F_catalogCarts(catalogCarts.seo)
-// F_catalogCarts(catalogCarts.media)
-// F_catalogCarts(catalogCarts.placement)
-// F_catalogCarts(catalogCarts.site)
-// F_catalogCarts(catalogCarts.integration)
-// F_catalogCarts(catalogCarts.region)
-
-// function F_catalogCarts (params) {
-//     params.forEach(element => {
-//         catalogCartsAll.push(element)
-//     });
-// }
 
 export default catalogCarts;
