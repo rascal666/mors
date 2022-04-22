@@ -18,13 +18,7 @@
 #root{
 background: #f2f4f7;
 }
-.infoBlock .infoBlock__price{
-background: #FFFFFF;
-    box-shadow: 0px 5px 18px rgb(0 0 0 / 12%);
-    border-radius: 3px;
-    padding: 24px 48px 48px 48px;
-    margin: 0 0 12px 0;
-}
+ 
 
 .similarServices{
   display: grid;
@@ -80,6 +74,18 @@ background: #FFFFFF;
   color: #61dafb;
 }
 
+.adjustable{
+  display: grid;
+    grid-auto-flow: column;
+    grid-gap: 60px;
+}
+
+.adjustable a{
+      padding: 16px;
+    background: #ece0b9;
+    border-radius: 15px;
+}
+
 .carts{
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
@@ -109,7 +115,7 @@ background: #FFFFFF;
 }
 .servicePage{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-items: end;
    
 }

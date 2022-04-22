@@ -6,13 +6,12 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/about/promo/redaktor-test/">
       <App />
-      
+
     </BrowserRouter>
-    
+
 
   </React.StrictMode>,
   document.getElementById('root')
 );
-

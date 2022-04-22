@@ -1,0 +1,43 @@
+.priseServices{
+background: #FFFFFF;
+    box-shadow: 0px 5px 18px rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    padding: 24px 48px 48px 48px;
+    margin: 0 0 12px 0;
+}
+
+.priseServices__title{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dde1ed;
+    margin: 0 0 24px 0;
+    width: 100%;
+}   
+
+.priseServices__price{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.priseServices__button{
+        width: 100% !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    white-space: nowrap !important;
+    color: #ffffff !important;
+    border-radius: 3px !important;
+    outline: 0 !important;
+    cursor: pointer !important;
+    -webkit-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #a3bd49 !important;
+    margin: 24px 0 0 0 !important;
+    padding: 12px 0 !important;
+}

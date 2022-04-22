@@ -11,11 +11,12 @@ import Cart from '../component/cart';
 import catalogCarts from '../bd/catalogCarts';
 import arrHeading from '../bd/forPages';
 import F_arrHeading from '../modules/f_sectionTag';
+import SimilarServices from '../component/similarServices';
+import UsefulServices from '../component/usefulServices';
+import PriseServices from '../component/priseServices/priseServices';
 
 const TurboSearch = (props) => {
 	const refTitle = useRef();
-	const navigate = useNavigate();
-	const goBack = () => navigate(-1);
 
 	useEffect(() => {
 		props.setServiceTitle(refTitle.current.innerHTML);
@@ -30,7 +31,7 @@ const TurboSearch = (props) => {
 			<div className=''>
 				<div className='crumbs'>
 					<Link to='/'>Магазин онлайн сервисов</Link>
-					<p onClick={goBack}>{props.sectionTitle}</p>
+					<Link to='/adjustable'>{props.sectionTitle}</Link>
 					<p>{props.serviceTitle}</p>
 				</div>
 				<p className='turboSearch__title' ref={refTitle}>
@@ -38,19 +39,12 @@ const TurboSearch = (props) => {
 				</p>
 				<p className='turboSearch__description'>Контекстная реклама ваших товаров, настроенная на целевые запросы в Яндекс и Google. Привлекает дополнительный трафик, увеличивает заказы, повышает узнаваемость компании и доверие со стороны покупателей.</p>
 				<img src={serviseImg} alt='' />
-				<div className='similarServices'>{catalogCarts[props.homeTag].slice(props.randomMin, props.random).map((cart, index) => (cart.title != props.serviceTitle ? <Cart src={cart.src} key={index} title={cart.title} description={cart.description} price={cart.price} linkPages={cart.linkPages} priceNoteBefore={cart.priceNoteBefore} priceNote={cart.priceNote} setDataClickCart={props.setDataClickCart} /> : false))}</div>
+
+				<SimilarServices homeTag={props.homeTag} randomMin={props.randomMin} random={props.random} serviceTitle={props.serviceTitle} />
 			</div>
 			<div className='infoBlock'>
-				<div className='infoBlock__price'>
-					<p>СТОИМОСТЬ И ЗАКАЗ УСЛУГИ</p>
-					<p>{servisePrice}</p>
-				</div>
-				<div className='infoBlock__useful'>
-					<p>МОЖЕТ ПРИГОДИТЬСЯ</p>
-					{props.catalogCartsAll.slice(props.randomMin, props.random).map((cart, index) => (
-						<Cart src={cart.src} key={index} title={cart.title} description={cart.description} price={cart.price} linkPages={cart.linkPages} priceNoteBefore={cart.priceNoteBefore} priceNote={cart.priceNote} setDataClickCart={props.setDataClickCart} />
-					))}
-				</div>
+				<PriseServices servisePrice={servisePrice.price} servisePriceNote={servisePrice.priceNote} erviceTitle={props.serviceTitle} />
+				<UsefulServices catalogCartsAll={props.catalogCartsAll} randomMin={props.randomMin} random={props.random} serviceTitle={props.serviceTitle} />
 			</div>
 		</div>
 	);

@@ -1,8 +1,8 @@
 /** @format */
 
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Home(props) {
 	function someFunc(e) {
@@ -11,13 +11,13 @@ function Home(props) {
 
 	return (
 		<div className='adjustable' onClick={(e) => someFunc(e)}>
-			<Link to='/adjustable' tab='seo'>
+			<Link to='/about/promo/redaktor-test/adjustable' tab='seo'>
 				перейти на разводную
 			</Link>
-			<Link to='/adjustable' tab='media'>
+			<Link to='/about/promo/redaktor-test/adjustable' tab='media'>
 				медиа
 			</Link>
-			<Link to='/adjustable' tab='seo'>
+			<Link to='/about/promo/redaktor-test/adjustable' tab='seo'>
 				seo
 			</Link>
 		</div>

@@ -1,21 +1,11 @@
 /** @format */
 
-import React, { useState } from 'react';
-import '../App.css';
-
-import Cart from '../component/cart';
-import catalogCarts from '../bd/catalogCarts';
-import Navigation from '../component/navigation';
+import React from 'react';
 
 function Adjustable(props) {
 	return (
 		<div className='home'>
-			<Navigation setHomeTag={props.setHomeTag} />
-			<div className='carts'>
-				{catalogCarts[props.homeTag].map((cart, index) => (
-					<Cart src={cart.src} key={index} title={cart.title} description={cart.description} price={cart.price} linkPages={cart.linkPages} priceNoteBefore={cart.priceNoteBefore} priceNote={cart.priceNote} setDataClickCart={props.setDataClickCart} />
-				))}
-			</div>
+			<p>sdcsdcsdcsdcsdc</p>
 		</div>
 	);
 }
