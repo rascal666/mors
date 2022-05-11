@@ -16,7 +16,7 @@
         my_custom_date_property: '2014-04-20',
         my_custom_boolean_property: 'true'
     }, */
-		app_key: "0941b6bf65402f9f664c3e3d675fd5ee",
+		app_key: '0941b6bf65402f9f664c3e3d675fd5ee',
 	};
 
 	(function (w, d, c) {
@@ -26,56 +26,56 @@
 				(w[c].q = w[c].q || []).push(arguments);
 			};
 		var ts = ((+new Date() / 86400000) | 0) * 86400;
-		var s = d.createElement("script");
-		s.type = "text/javascript";
+		var s = d.createElement('script');
+		s.type = 'text/javascript';
 		s.async = true;
-		s.charset = "utf-8";
-		s.src = "https://tracker.convead.io/widgets/" + ts + "/widget-0941b6bf65402f9f664c3e3d675fd5ee.js";
-		var x = d.getElementsByTagName("script")[0];
+		s.charset = 'utf-8';
+		s.src = 'https://tracker.convead.io/widgets/' + ts + '/widget-0941b6bf65402f9f664c3e3d675fd5ee.js';
+		var x = d.getElementsByTagName('script')[0];
 		x.parentNode.insertBefore(s, x);
-	})(window, document, "convead");
+	})(window, document, 'convead');
 </script>
 <!-- /Convead Widget -->
 <script>
-	convead("event", "view_product", {
-		product_id: "34",
-		product_name: "Site-inclusive",
-		product_url: "https://www.pulscen.ru/online-shop/site-all",
+	convead('event', 'view_product', {
+		product_id: '34',
+		product_name: 'Site-inclusive',
+		product_url: 'https://www.pulscen.ru/online-shop/site-all',
 	});
 </script>
 
 <script>
 	function cerebro() {
-		convead("event", "update_cart", {
+		convead('event', 'update_cart', {
 			items: [
-				{ product_id: "34", qnt: 1, price: 350000 },
-				{ product_id: "34", qnt: 1, price: 350000 },
+				{ product_id: '34', qnt: 1, price: 350000 },
+				{ product_id: '34', qnt: 1, price: 350000 },
 			],
 		});
 
-		console.log("серебро");
+		console.log('серебро');
 	}
 
 	function gold() {
-		convead("event", "update_cart", {
+		convead('event', 'update_cart', {
 			items: [
-				{ product_id: "341", qnt: 1, price: 450000 },
-				{ product_id: "341", qnt: 1, price: 450000 },
+				{ product_id: '341', qnt: 1, price: 450000 },
+				{ product_id: '341', qnt: 1, price: 450000 },
 			],
 		});
 
-		console.log("золото");
+		console.log('золото');
 	}
 
 	function plat() {
-		convead("event", "update_cart", {
+		convead('event', 'update_cart', {
 			items: [
-				{ product_id: "342", qnt: 1, price: 700000 },
-				{ product_id: "342", qnt: 1, price: 700000 },
+				{ product_id: '342', qnt: 1, price: 700000 },
+				{ product_id: '342', qnt: 1, price: 700000 },
 			],
 		});
 
-		console.log("платина");
+		console.log('платина');
 	}
 </script>
 
@@ -214,21 +214,21 @@
 
 		<script type="text/javascript">
 			// Slider
-			var slides = document.querySelectorAll("._customer-slider ._customer-slider__slide"),
+			var slides = document.querySelectorAll('._customer-slider ._customer-slider__slide'),
 				currentSlide = 0;
 			function nextSlide() {
-				slides[currentSlide].className = "_customer-slider__slide";
+				slides[currentSlide].className = '_customer-slider__slide';
 				currentSlide = (currentSlide + 1) % slides.length;
-				slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+				slides[currentSlide].className = '_customer-slider__slide _customer-slider__slide_active';
 			}
 			function prevSlide() {
-				slides[currentSlide].className = "_customer-slider__slide";
+				slides[currentSlide].className = '_customer-slider__slide';
 				if (currentSlide == 0) {
 					currentSlide = slides.length - 1;
-					slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+					slides[currentSlide].className = '_customer-slider__slide _customer-slider__slide_active';
 				} else {
 					currentSlide = (currentSlide - 1) % slides.length;
-					slides[currentSlide].className = "_customer-slider__slide _customer-slider__slide_active";
+					slides[currentSlide].className = '_customer-slider__slide _customer-slider__slide_active';
 				}
 			}
 			// end Slider
@@ -236,22 +236,22 @@
 
 		<script type="text/javascript">
 			function toggle(id) {
-				document.getElementById("conten").innerHTML = document.getElementById(id).innerHTML;
+				document.getElementById('conten').innerHTML = document.getElementById(id).innerHTML;
 			}
-			toggle("first");
+			toggle('first');
 		</script>
 		<!-- Begin Me-Talk --><script type="text/javascript">
-			window.MeTalkSetup = { domain: "comkc.pulscen.ru" };
+			window.MeTalkSetup = { domain: 'comkc.pulscen.ru' };
 			(function (d, w, m) {
 				window.supportAPIMethod = m;
-				var s = d.createElement("script");
-				s.type = "text/javascript";
-				s.id = "supportScript";
-				s.charset = "utf-8";
+				var s = d.createElement('script');
+				s.type = 'text/javascript';
+				s.id = 'supportScript';
+				s.charset = 'utf-8';
 				s.async = true;
-				var id = "9e71060b780fc267cbbfff6f8dec56ba";
-				s.src = "//me-talk.ru/support/support.js?h=" + id;
-				var sc = d.getElementsByTagName("script")[0];
+				var id = '9e71060b780fc267cbbfff6f8dec56ba';
+				s.src = '//me-talk.ru/support/support.js?h=' + id;
+				var sc = d.getElementsByTagName('script')[0];
 				w[m] =
 					w[m] ||
 					function () {
@@ -259,7 +259,7 @@
 					};
 				if (sc) sc.parentNode.insertBefore(s, sc);
 				else d.documentElement.firstChild.appendChild(s);
-			})(document, window, "MeTalk");</script
+			})(document, window, 'MeTalk');</script
 		><!-- End Me-Talk -->
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
@@ -276,21 +276,21 @@
 					} catch (e) {}
 				});
 
-				var n = d.getElementsByTagName("script")[0],
-					s = d.createElement("script"),
+				var n = d.getElementsByTagName('script')[0],
+					s = d.createElement('script'),
 					f = function () {
 						n.parentNode.insertBefore(s, n);
 					};
-				s.type = "text/javascript";
+				s.type = 'text/javascript';
 				s.async = true;
-				s.src = "https://mc.yandex.ru/metrika/watch.js";
+				s.src = 'https://mc.yandex.ru/metrika/watch.js';
 
-				if (w.opera == "[object Opera]") {
-					d.addEventListener("DOMContentLoaded", f, false);
+				if (w.opera == '[object Opera]') {
+					d.addEventListener('DOMContentLoaded', f, false);
 				} else {
 					f();
 				}
-			})(document, window, "yandex_metrika_callbacks");
+			})(document, window, 'yandex_metrika_callbacks');
 		</script>
 		<noscript
 			><div><img src="https://mc.yandex.ru/watch/200476" style="position: absolute; left: -9999px" alt="" /></div
@@ -307,9 +307,9 @@
 					};
 				m[i].l = 1 * new Date();
 				(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
-			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-			ym(56609113, "init", {
+			ym(56609113, 'init', {
 				clickmap: true,
 				trackLinks: true,
 				accurateTrackBounce: true,
@@ -328,9 +328,9 @@
 			function gtag() {
 				dataLayer.push(arguments);
 			}
-			gtag("js", new Date());
+			gtag('js', new Date());
 
-			gtag("config", "UA-154353994-1");
+			gtag('config', 'UA-154353994-1');
 		</script>
 	</head></html
 >
